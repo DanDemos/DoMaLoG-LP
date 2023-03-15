@@ -1,0 +1,129 @@
+/*Text Colors */
+.cl-primary {
+	color: #E36A54;
+}
+
+.cl-secondary {
+	color: green;
+}
+
+.cl-black-base {
+	color: red;
+}
+
+.coinouter {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #e5a930;
+  border-radius: 50%;
+  color: #e5a930;
+  box-shadow: 0 0 0.625em #e5a930, 0 0 0.5em #e5a930, 0 0 0.75em #e5a930;
+}
+
+@keyframes flip {
+    0% {
+        transform: rotateY(0);
+    }
+
+    100% {
+        transform: rotateY(-180deg);
+    }
+}
+
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  cursor: pointer;
+  width: 81px;
+  height: 66px;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #707070;
+  margin: 10px 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.line1 {
+  transform-origin: bottom right; /* changed from top right */
+  width: 80px; /* changed from 20px */
+}
+
+.line2 {
+  transform-origin: center right;
+  width: 60px;
+}
+
+.line3 {
+  transform-origin: top right; /* changed from bottom right */
+  width: 40px; /* changed from 40px */
+}
+
+.change .line1 {
+  transform: rotate(45deg) translate(12px, 43px); /* changed from rotate(-45deg) translate(-3px, -4px) */
+  width: 50px; /* changed from 30px */
+}
+
+.change .line2 {
+  width: 30px;
+  opacity: 0;
+}
+
+.change .line3 {
+  transform: rotate(-45deg) translate(12px, -43px); /* changed from opacity: 0 */
+  width: 50px;
+}
+
+.default-button {
+  position: relative;
+  background: #E36A54;
+  border-radius: 25px;
+  color: white;
+  font-size: 16px;
+  padding-left: 48px;
+  padding-right: 48px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  transition: 0.3s;
+}
+
+.default-button::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border-radius: 25px;
+  border: #E36A54 3px solid;
+  transition: 0.3s;
+}
+
+.default-button:hover{
+  padding-left: 49px;
+  padding-right: 49px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  transition: 0.3s;
+}
+
+.default-button:hover:after {
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  border-radius: 25px;
+  border: #E36A54 2px solid;
+  transition: 0.3s;
+}
+.text-over-image{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
