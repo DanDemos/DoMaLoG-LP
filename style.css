@@ -93,18 +93,28 @@
 .default-button::after {
   content: '';
   position: absolute;
-  top: -5px;
-  left: -5px;
-  right: -5px;
-  bottom: -5px;
+  top: -6px;
+  left: -6px;
+  right: -6px;
+  bottom: -6px;
   border-radius: 50px;
-  border: #E36A54 3px solid;
+  border: #E36A54 4px solid;
   transition: 0.3s;
 }
 
 .default-button:hover{
-  width: 230px;
-  height: 38px;
+  width: 241px;
+  height: 49px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.default-button:hover:after{
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border: #E36A54 3px solid;
   transition: 0.3s;
 }
 
