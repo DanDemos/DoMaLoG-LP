@@ -82,13 +82,11 @@
 .default-button {
   position: relative;
   background: #E36A54;
-  border-radius: 25px;
+  border-radius: 50px;
   color: white;
   font-size: 16px;
-  padding-left: 48px;
-  padding-right: 48px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  width: 240px;
+  height: 48px;
   transition: 0.3s;
 }
 
@@ -99,20 +97,18 @@
   left: -5px;
   right: -5px;
   bottom: -5px;
-  border-radius: 25px;
+  border-radius: 50px;
   border: #E36A54 3px solid;
   transition: 0.3s;
 }
 
 .default-button:hover{
-  padding-left: 49px;
-  padding-right: 49px;
-  padding-top: 9px;
-  padding-bottom: 9px;
+  width: 230px;
+  height: 38px;
   transition: 0.3s;
 }
 
-.default-button:hover:after {
+/* .default-button:hover:after {
   top: -4px;
   left: -4px;
   right: -4px;
@@ -126,4 +122,4 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
+} */
