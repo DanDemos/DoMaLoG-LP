@@ -30,6 +30,13 @@
     }
 }
 
+.f-jp{
+  font-family: source-han-sans-japanese, sans-serif;
+}
+
+.f-en{
+  
+}
 
 .menu {
   display: flex;
@@ -127,9 +134,10 @@
   border: #E36A54 2px solid;
   transition: 0.3s;
 }
+*/
 .text-over-image{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-} */
+}
