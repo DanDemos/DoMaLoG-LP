@@ -135,6 +135,7 @@
   transition: 0.3s;
 }
 */
+
 .text-over-image{
   position: absolute;
   top: 50%;
@@ -142,14 +143,8 @@
   transform: translate(-50%, -50%);
 }
 
-.img-layer-border::after {
-  content: '';
-  position: absolute;
-  top: -6px;
-  left: -6px;
-  right: -6px;
-  bottom: -6px;
-  border-radius: 50px;
-  border: #E36A54 4px solid;
-  transition: 0.3s;
+.img-layer-border {
+  box-shadow: -20px 20px red, 
+    -35px 35px green, 
+      -40px 40px blue;
 }
