@@ -144,7 +144,25 @@
 }
 
 .img-layer-border {
+  display: inline-table;
   box-shadow: -20px 20px #68E5AE, 
     -40px 40px 0px -2px #f2f2f2,
       -40px 40px #68E5AE;
+}
+
+.img-layer-border-parent{
+  position: relative;
+  display: inline-flex;
+}
+
+.img-layer-border-parent::after {
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: -40px;
+  right: 0px;
+  bottom: 40px;
+  border: #E36A54 4px solid;
+  transition: 0.3s;
+  /* z-index: -1; */
 }
