@@ -160,8 +160,8 @@
   position: absolute;
   top: 40px;
   left: -40px;
-  right: 0px;
-  bottom: 40px;
+  right: 40px;
+  bottom: -40px;
   border: #E36A54 4px solid;
   transition: 0.3s;
   /* z-index: -1; */
