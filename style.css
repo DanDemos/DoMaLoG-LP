@@ -145,9 +145,9 @@
 
 .img-layer-border {
   display: inline-table;
-  box-shadow: -20px 20px #68E5AE, 
-    -40px 40px 0px -2px #f2f2f2,
-      -40px 40px #68E5AE;
+  box-shadow: -20px 20px #68E5AE;
+    /* -40px 40px 0px -2px #f2f2f2, */
+      /* -40px 40px #68E5AE; */
 }
 
 .img-layer-border-parent{
@@ -162,7 +162,7 @@
   left: -40px;
   right: 40px;
   bottom: -40px;
-  border: #E36A54 4px solid;
+  border: #68E5AE 2px solid;
   transition: 0.3s;
-  /* z-index: -1; */
+  z-index: -1;
 }
