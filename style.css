@@ -141,3 +141,15 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.img-layer-border::after {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  right: -6px;
+  bottom: -6px;
+  border-radius: 50px;
+  border: #E36A54 4px solid;
+  transition: 0.3s;
+}
