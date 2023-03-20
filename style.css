@@ -4,7 +4,7 @@
 }
 
 .cl-secondary {
-	color: green;
+	color: #68E5AE;
 }
 
 .cl-black-base {
@@ -127,12 +127,52 @@
 
 .secondary-button {
   position: relative;
-  background: #E36A54;
+  background: white;
   border-radius: 50px;
-  color: white;
+  border: #E36A54 2px solid;
+  color: #E36A54;
   font-size: 16px;
   width: 240px;
   height: 48px;
+  transition: 0.3s;
+}
+
+.secondary-button::after {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  right: -6px;
+  bottom: -6px;
+  border-radius: 50px;
+  border: #E36A54 1px solid;
+  transition: 0.3s;
+}
+
+.secondary-button:hover{
+  width: 241px;
+  height: 49px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.secondary-button:hover:after{
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border: #E36A54 1px solid;
+  transition: 0.3s;
+}
+
+.tertiary-button {
+  position: relative;
+  background: #68E5AE;
+  border-radius: 50px;
+  color: white;
+  font-size: 16px;
+  width: 103px;
+  height: 32px;
   transition: 0.3s;
 }
 
@@ -154,12 +194,14 @@
   transform: translate(-50%, -50%);
 }
 
-.img-layer-border-parent{
+.img-layer-border-1-parent, 
+.img-layer-border-2-parent, 
+.img-layer-border-3-parent{
   position: relative;
   display: inline-flex;
 }
 
-.img-layer-border-parent::after {
+.img-layer-border-1-parent::after {
   content: '';
   position: absolute;
   top: 40px;
@@ -171,7 +213,41 @@
   z-index: -1;
 }
 
-.img-layer-border {
+.img-layer-border-1 {
   display: inline-table;
   box-shadow: -20px 20px #68E5AE;
+}
+
+.img-layer-border-2-parent::after {
+  content: '';
+  position: absolute;
+  top: -40px;
+  left: 40px;
+  right: -40px;
+  bottom: 40px;
+  border: #68E5AE 2px solid;
+  transition: 0.3s;
+  z-index: -1;
+}
+
+.img-layer-border-2 {
+  display: inline-table;
+  box-shadow: 20px -20px #68E5AE;
+}
+
+.img-layer-border-3-parent::after {
+  content: '';
+  position: absolute;
+  top: -40px;
+  left: -40px;
+  right: 40px;
+  bottom: 40px;
+  border: #68E5AE 2px solid;
+  transition: 0.3s;
+  z-index: -1;
+}
+
+.img-layer-border-3 {
+  display: inline-table;
+  box-shadow: -20px -20px #68E5AE;
 }

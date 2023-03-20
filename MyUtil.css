@@ -3148,7 +3148,7 @@ iframe {border: none;}
 
 /*//////////////////////////////////////////////////////////////////
 [ Background Color ]*/
-.bg-white {background-color: white;}
+.bg-white {background-color: white!important;}
 .bg-black {background-color: black;}
 .bg-blue {background-color: blue;}
 
