@@ -1,4 +1,12 @@
 /*Text Colors */
+a{
+  color: black;
+}
+
+a:hover{
+  color: #E36A54;
+}
+
 .cl-primary {
 	color: #E36A54;
 }
