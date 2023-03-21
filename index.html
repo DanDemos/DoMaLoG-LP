@@ -55,25 +55,33 @@
 		</div>
 	</div>
 
-	<!-- ======= Top Bar ======= -->
-	<!-- <section id="topbar" class="d-flex justify-content-between align-items-center bg-black">
-		<div class=""></div>
-		<marquee id="headerplay" behavior="sliding" direction="left" scrollamount="10" loop="-1">
-			Hello World	Hello World	Hello World	Hello World	Hello World	Hello World	Hello World	Hello World	Hello World
-		</marquee>
-		<div class=""></div>
-	</section> -->
+	<div class="position-fixed z-q9" style="bottom: 50%; right: 2%;">
+		<div class="position-relative d-flex flex-column align-items-end">
+			<button id="menu-btn-open" class="position-absolute floating">
+				<img src="images/Polygon 2.png" width="30" height="30" alt="Button" class="img-fluid">
+			</button>
+			<div class="position-absolute z-10" >
+				<div class="d-flex flex-column bg-primary cl-white rounded-4 fs-21 fw-1000 text-end w-100 p-4">
+					<button id="menu-btn-close" class="cl-white text-end"><i class="fas fa-times fs-24"></i></button>
 
-	<!-- ======= Header ======= -->
-	<!-- <section>
-		<div class="m-lr-30 d-flex justify-content-end">
-			<div class="menu my-3" style="">
-			  <div class="line line1"></div>
-			  <div class="line line2"></div>
-			  <div class="line line3"></div>
+					<a href="#session1" class="mt-3 cl-white cl-hover-white">Top</a>
+					<a href="#session2" class="mt-3 cl-white cl-hover-white">About</a>
+					<a href="#session3" class="mt-3 cl-white cl-hover-white">Feature</a>
+					<a href="#session4" class="mt-3 cl-white cl-hover-white">Content</a>
+					<div class="d-flex justify-content-between w-100 m-t-40">
+						<div><button href="" class="cl-white"><i class="fab fa-twitter fs-24"></i></button></div>
+						<div><button href="" class="cl-white"><i class="fab fa-discord fs-24"></i></button></div>
+					</div>
+	
+		
+				</div>
 			</div>
 		</div>
-	</section> -->
+	</div>
+	
+	
+	
+
 	<section class="p-b-80" style="background: url('images/mv-bg2.png');">
 		<div class="container">
 			<div class="row">
@@ -133,7 +141,7 @@
 		
 	</section>
 
-	<section>
+	<section id="session2">
 		<div class=" m-0 p-0">
 			<div class="row m-0 p-0">
 				<div class="position-relative m-0 p-0">
@@ -216,8 +224,6 @@
 		</div>
 	</section>
 	
-	
-
 	<section class="m-t-70">
 		<div class="row align-items-end g-0 position-relative">
 			<div class="col-md-6 order-md-last text-end">
@@ -465,6 +471,7 @@
 		
 	</footer>
 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 	<!-- Glightbox -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js"></script>
 	<!-- A touchable Pure Javascript lightbox with mobile and video support. -->
