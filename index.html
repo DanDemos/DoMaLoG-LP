@@ -1,484 +1,640 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>My Template</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Template</title>
 
-	<!-- Favicons -->
-	<link href="images/fav-icon.jpg" rel="icon">
-	<link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Favicons -->
+    <link href="images/fav-icon.jpg" rel="icon" />
+    <link href="images/apple-touch-icon.png" rel="apple-touch-icon" />
 
-	<!-- CSS only -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
 
-	<!-- Google Fonts -->
-	<link href="" rel="stylesheet">
-	<!-- https://fonts.googleapis.com -->
+    <!-- Google Fonts -->
+    <link href="" rel="stylesheet" />
+    <!-- https://fonts.googleapis.com -->
 
-	<!-- Icons -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-	<script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
 
-	<!-- Material Design Iconic Font -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <!-- Material Design Iconic Font -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"
+    />
 
-	<!-- Glightbox -->
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/css/glightbox.css">
-	<!-- A touchable Pure Javascript lightbox with mobile and video support. -->
+    <!-- Glightbox -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/css/glightbox.css"
+    />
+    <!-- A touchable Pure Javascript lightbox with mobile and video support. -->
 
-	<!-- Splitting -->
-	<link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
-	<!-- Splitting create elements and adds CSS variables to unlock amazing possibilities for animating text, grids, and more! -->
+    <!-- Splitting -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/splitting/dist/splitting.css"
+    />
+    <!-- Splitting create elements and adds CSS variables to unlock amazing possibilities for animating text, grids, and more! -->
 
-	<!-- Datatable -->
-	<link rel="stylesheet" href="https://cdn.datatables.net/1.12.0/css/jquery.dataTables.min.css">
+    <!-- Datatable -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.12.0/css/jquery.dataTables.min.css"
+    />
 
-	<!-- Vendor CSS Files -->
-	<link href="" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="" rel="stylesheet" />
 
-	<!-- Template Main CSS File -->
-	<link href="MyUtil.css" rel="stylesheet">
-	<link href="style.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="MyUtil.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div
+      class="d-none flex-column bg-black justify-content-center position-fixed w-100 h-100 top-0 left-0 text-center opacity-100 z-10"
+    >
+      <div class="logo">
+        <img src="images/logo1.png" alt="" class="width-200 unselectable" />
+      </div>
 
-</head>
-<body>
-	<div class="d-none flex-column bg-black justify-content-center position-fixed w-100 h-100 top-0 left-0 text-center opacity-100 z-10">
+      <div class="d-flex flex-column align-items-center m-t-30"></div>
+    </div>
 
-		<div class="logo">
-			<img src="images/logo1.png" alt="" class="width-200 unselectable">
-		</div>
+    <div class="position-fixed z-q9" style="bottom: 55%; right: 2%">
+      <div class="position-relative d-flex flex-column align-items-end">
+        <button id="menu-btn-open" class="position-absolute floating">
+          <img
+            src="images/Polygon 2.png"
+            width="30"
+            height="30"
+            alt="Button"
+            class="img-fluid"
+          />
+        </button>
+        <div class="position-absolute z-10" style="display: none">
+          <div
+            class="d-flex flex-column bg-primary cl-white rounded-4 fs-21 fw-1000 text-end w-100 p-4"
+          >
+            <button
+              id="menu-btn-close"
+              class="cl-white text-end position-absolute top-0 right-0 p-lr-23 p-tb-13"
+            >
+              <i class="fas fa-times fs-24"></i>
+            </button>
 
-		<div class="d-flex flex-column align-items-center m-t-30">
-			
-		</div>
-	</div>
+            <a
+              href="#session1"
+              class="m-t-24 cl-white cl-hover-white hover-italic"
+              >Top</a
+            >
+            <a
+              href="#session2"
+              class="mt-3 cl-white cl-hover-white hover-italic"
+              >About</a
+            >
+            <a
+              href="#session3"
+              class="mt-3 cl-white cl-hover-white hover-italic"
+              >Feature</a
+            >
+            <a
+              href="#session4"
+              class="mt-3 cl-white cl-hover-white hover-italic"
+              >Content</a
+            >
+            <div class="d-flex justify-content-between w-100 m-t-30">
+              <div>
+                <button href="" class="cl-white">
+                  <i class="fab fa-twitter fs-24 hover-large"></i>
+                </button>
+              </div>
+              <div>
+                <button href="" class="cl-white">
+                  <i class="fab fa-discord fs-24 hover-large"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-	<div class="position-fixed z-q9" style="bottom: 55%; right: 2%;">
-		<div class="position-relative d-flex flex-column align-items-end">
-			<button id="menu-btn-open" class="position-absolute floating">
-				<img src="images/Polygon 2.png" width="30" height="30" alt="Button" class="img-fluid">
-			</button>
-			<div class="position-absolute z-10" style="display: none;">
-				<div class="d-flex flex-column bg-primary cl-white rounded-4 fs-21 fw-1000 text-end w-100 p-4">
-					<button id="menu-btn-close" class="cl-white text-end position-absolute top-0 right-0 p-lr-23 p-tb-13"><i class="fas fa-times fs-24"></i></button>
-				  
-					<a href="#session1" class="m-t-24 cl-white cl-hover-white hover-italic">Top</a>
-					<a href="#session2" class="mt-3 cl-white cl-hover-white hover-italic">About</a>
-					<a href="#session3" class="mt-3 cl-white cl-hover-white hover-italic">Feature</a>
-					<a href="#session4" class="mt-3 cl-white cl-hover-white hover-italic">Content</a>
-					<div class="d-flex justify-content-between w-100 m-t-30">
-						<div><button href="" class="cl-white"><i class="fab fa-twitter fs-24 hover-large"></i></button></div>
-						<div><button href="" class="cl-white"><i class="fab fa-discord fs-24 hover-large"></i></button></div>
-					</div>
-	
-		
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	
-	
+    <section
+      id="session1"
+      class="p-b-80"
+      style="background: url('images/mv-bg2.png')"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div id="Title-1" class="m-t-70">
+              <h1 class="fs-72 lh-base" style="font-weight: 1000">
+                さあ、リアルEXPを<br />タメよう。
+              </h1>
+            </div>
 
-	<section id="session1" class="p-b-80" style="background: url('images/mv-bg2.png');">
-		<div class="container">
-			<div class="row">
-				<div class="col-12 text-center">
+            <div id="Para-1" class="mt-4">
+              <p class="fs-16 lh-base fw-bold">
+                「メモをとる」からはじまる、オンラインP2Pラーニングアプリ。<br />
+                ゲームの上達からはじまり、ゲームの枠を超えたパワーを手に入れよう。
+              </p>
+            </div>
 
-					<div id="Title-1" class="m-t-70">
-						<h1 class="fs-72 lh-base" style="font-weight: 1000;">
-							さあ、リアルEXPを<br>タメよう。
-						</h1>
-					</div>
+            <div class="mt-5">
+              <div class="row justify-content-center text-center">
+                <div class="col-7 g-0">
+                  <div class="row">
+                    <div class="col-5 row g-0 flex-column justify-content-end">
+                      <div
+                        class="position-relative d-flex flex-column justify-content-center text-center"
+                      >
+                        <div class="d-flex flex-column text-center p-b-100">
+                          <img
+                            class="mx-auto"
+                            src="https://via.placeholder.com/240x36"
+                            width="240"
+                            height="36"
+                            alt="Logo"
+                          />
 
-					<div id="Para-1" class="mt-4">
-						<p class="fs-16 lh-base fw-bold">
-							「メモをとる」からはじまる、オンラインP2Pラーニングアプリ。<br>
-							ゲームの上達からはじまり、ゲームの枠を超えたパワーを手に入れよう。
-						</p>
-					</div>
+                          <h2
+                            class="fs-16 cl-primary p-t-22"
+                            style="letter-spacing: 6px"
+                          >
+                            ドマログ
+                          </h2>
+                        </div>
 
-					<div class="mt-5">
+                        <div
+                          class="position-absolute bottom-0 start-0 end-0 mx-auto"
+                        >
+                          <button class="default-button mx-auto">
+                            インストール
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-7">
+                      <img
+                        src="https://via.placeholder.com/140x279"
+                        alt="Logo"
+                      />
+                      <img
+                        src="https://via.placeholder.com/186x279"
+                        alt="Logo"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-						<div class="row justify-content-center text-center">
-							<div class="col-7 g-0">
-								<div class="row">
-									<div class="col-5 row g-0 flex-column justify-content-end">
+    <section>
+      <div class="m-0 p-0">
+        <div class="row m-0 p-0">
+          <div class="position-relative m-0 p-0">
+            <img
+              class="w-100"
+              src="https://via.placeholder.com/1366x768"
+              alt="Mobile Home Page"
+            />
+            <h1 class="text-over-image fs-70">動&nbsp&nbsp画</h1>
+          </div>
+        </div>
+      </div>
+    </section>
 
-										<div class="position-relative d-flex flex-column justify-content-center text-center">
+    <section id="session2" class="position-relative">
+      <div class="container">
+        <div class="row">
+          <div class="text-center m-t-72">
+            <img
+              src="images/Group 215.png"
+              width="38px"
+              height="38px"
+              alt="spin"
+            />
+            <h1 class="fs-40 fw-1000 m-t-13">About DoMaLoG</h1>
+          </div>
 
-											<div class="d-flex flex-column text-center p-b-100">
-												<img class="mx-auto" src="https://via.placeholder.com/240x36" width="240" height="36" alt="Logo">
+          <div class="text-center m-t-100">
+            <h1 class="fs-72 fw-bold f-jp">
+              蓄積を叡智に変える、<br />
+              生涯のパートナー。
+            </h1>
+          </div>
 
-												<h2 class="fs-16 cl-primary p-t-22" style="letter-spacing: 6px;">
-													ドマログ
-												</h2>
-											</div>
-											
-											<div class="position-absolute bottom-0 start-0 end-0 mx-auto ">
-												<button class="default-button mx-auto">
-													インストール
-												</button>
-											</div>
-										</div>
+          <p class="text-center m-t-70 fw-500 lh-18">
+            ドマログは、体験を価値に変えて、殻を破り潜在能力を引き出すのに最適です。
+            <br />
+            簡単にメモをとり見直せるだけでなく、<br />
+            仲間の視点とのギャップから思考の軸を整理することもできます。<br />
+            君と一緒にセンスの壁を超えるため、これからも進化し続けます。
+          </p>
+        </div>
+      </div>
+      <img
+        class="position-absolute top-0 right-12 zm-1"
+        src="images/mv.png"
+        alt=""
+      />
+    </section>
 
-									</div>
-									<div class="col-7">
-											<img src="https://via.placeholder.com/140x279" alt="Logo">
-											<img src="https://via.placeholder.com/186x279" alt="Logo">
-									</div>
-								</div>
-							</div>
-						</div>
+    <section class="p-t-70 p-b-180">
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <div class="image-holder d-flex justify-content-end">
+              <img
+                class="me-1"
+                src="https://via.placeholder.com/187x280"
+                alt="Mobile Home Page"
+              />
+            </div>
+          </div>
+          <div class="col-4 p-0 d-flex flex-column">
+            <div class="text-center p-t-0">
+              <h1 class="fs-24">早くいきたければ一人で進め。</h1>
+              <h2 class="fs-24 p-t-15">遠くまで行きたければ、みんなで進め。</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-					</div>
+    <section id="session3" class="p-t-40">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-11">
+            <div class="d-flex">
+              <img
+                class="my-auto me-4"
+                src="images/Group 213.png"
+                width="38px"
+                height="38px"
+                alt=""
+              />
+              <h1 class="fs-40 fw-1000">Feature</h1>
+            </div>
+            <h1 class="fs-64 fw-1000 m-t-50">仲間と一緒に進もう。</h1>
+          </div>
+        </div>
+      </div>
+    </section>
 
-				</div>
-			</div>
-		</div>
-		
-	</section>
+    <section id="体験はsaveできる" class="m-t-70">
+      <div class="row align-items-end g-0 position-relative">
+        <div class="col-md-5 order-md-last text-end">
+          <div class="img-layer-border-1-parent">
+            <img class="img-layer-border-1 max-w-full h-auto"
+            src="https://via.placeholder.com/648x365" alt="Logo"">
+          </div>
+        </div>
 
-	<section>
-		<div class=" m-0 p-0">
-			<div class="row m-0 p-0">
-				<div class="position-relative m-0 p-0">
-					<img class="w-100" src="https://via.placeholder.com/1366x768" alt="Mobile Home Page">
-					<h1 class="text-over-image fs-70">
-						動&nbsp&nbsp画
-					</h1>
-				</div>
-			</div>
-		</div>
-	</section>
+        <div class="col-md-7">
+          <div
+            class="p-lr-40 p-t-75 p-b-75 position-relative zm-1 bg-white"
+            style="margin-right: -100px; margin-bottom: -90px"
+          >
+            <h1 class="fs-24">体験はsaveできる</h1>
+            <h2 class="fs-16 m-t-30 lh-18">
+              「メモをとる」というちょっとしたことからはじめよう。たかがメモと思うかもしれ<br />
+              ない。しかし、メモをとることで上達することを知っている人たちはその小さくて大<br />
+              きな行動をしている。君に必要なのはたった10秒。さあ、体験を価値に変えよう。
+            </h2>
+            <div class="d-flex align-items-center m-t-30">
+              <h3 class="cl-secondary fs-16">機能：</h3>
+              <button class="tertiary-button fs-16 ms-2">MEMO</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-	<section id="session2" class="position-relative">
-		<div class="container">
-			<div class="row">
-				<div class="text-center m-t-72">
-					<img src="images/Group 215.png" width="38px" height="38px" alt="spin">
-					<h1 class="fs-40 fw-1000 m-t-13">
-						About DoMaLoG
-					</h1>
-				</div>
+    <section id="体験を共有しよう " class="m-t-175">
+      <div class="row align-items-end g-0 position-relative">
+        <div class="col-md-5 order-md-start text-start">
+          <div class="img-layer-border-2-parent">
+            <img
+              class="img-layer-border-2 max-w-full h-auto"
+              src="https://via.placeholder.com/546x364"
+              alt="Logo"
+            />
+          </div>
+        </div>
+        <div class="col-md-7">
+		  <!--margin-left: -80px;  removed from below. Please reapply if necessary-->
+          <div
+            class="p-l-90 p-t-77 p-b-75 position-relative zm-2 bg-white"
+            style="margin-bottom: 110px"
+          >
+            <h1 class="fs-24">体験を共有しよう</h1>
+            <h2 class="fs-16 m-t-33 lh-18">
+              どのようにメモを取ればよいのか、その内容は相応しいのか。これを解決するために<br />
+              「仲間と共有する」という手がある。自分だけで考えるのではなく、多くのプレイ<br />
+              ヤーの経験を反映する。それは世界中のプレイヤーが自分のコーチになるとも言え<br />
+              る。
+            </h2>
+            <div class="d-flex align-items-center m-t-0">
+              <h3 class="cl-secondary fs-16">機能：</h3>
+              <button class="tertiary-button fs-16 ms-2">NOTE</button>
+              <button class="tertiary-button fs-16 ms-3">FORUM</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-				<div class="text-center m-t-100">
-					<h1 class="fs-72 fw-bold f-jp">
-						蓄積を叡智に変える、<br>
-						生涯のパートナー。
-					</h1>
-				</div>
+    <section id="信頼できる仲間とつながろう " class="m-t-80">
+      <div class="row align-items-end g-0 position-relative">
+        <div class="col-md-5 order-md-last text-end">
+          <div class="img-layer-border-3-parent">
+            <img
+              class="img-layer-border-3 max-w-full h-auto"
+              src="https://via.placeholder.com/648x365"
+              alt="Logo"
+            />
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div
+            class="p-lr-40 p-t-75 p-b-75 position-relative zm-1 bg-white"
+            style="margin-right: -100px; margin-bottom: 90px"
+          >
+            <h1 class="fs-24">信頼できる仲間とつながろう</h1>
+            <h2 class="fs-16 m-t-30 lh-18">
+              「簡単に仲間の取り組み方がみえる。今の君に必要なことを的確にアドバイスできるエ<br />
+              キスパートがいる。悩みをシェアしてみよう。一方で君の経験を必要としている仲間<br />
+              がいる。知恵を伝えよう。近いレベルでプレーできる仲間が増えた方がもっとワ<br />
+              クワクできる。
+            </h2>
+            <div class="d-flex align-items-center m-t-30">
+              <h3 class="cl-secondary fs-16">機能：</h3>
+              <button class="tertiary-button fs-16 ms-2">FORUM</button>
+              <button class="tertiary-button fs-16 ms-3">EVENT</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-				<p class="text-center m-t-70 fw-500 lh-18">
-					ドマログは、体験を価値に変えて、殻を破り潜在能力を引き出すのに最適です。 <br>
-					簡単にメモをとり見直せるだけでなく、<br>
-					仲間の視点とのギャップから思考の軸を整理することもできます。<br>
-					君と一緒にセンスの壁を超えるため、これからも進化し続けます。 
-				</p>
+    <section class="p-t-150 p-b-120 position-relative">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div id="Title-1" class="m-t-70">
+              <h1 class="fs-48 lh-base" style="font-weight: 1000">
+                人生に刺激とワクワクをあたえる<br />
+                一歩をふみ出そう。
+              </h1>
+            </div>
 
-			</div>
-		</div>	
-		<img class="position-absolute top-0 right-12 zm-1" src="images/mv.png" alt="">
-	</section>
+            <div class="m-t-80">
+              <div class="row justify-content-center text-center">
+                <div class="col-7 g-0">
+                  <div class="row">
+                    <div class="col-5 row g-0 flex-column justify-content-end">
+                      <div
+                        class="position-relative d-flex flex-column justify-content-center text-center"
+                      >
+                        <div class="d-flex flex-column text-center p-b-160">
+                          <img
+                            class="mx-auto"
+                            src="https://via.placeholder.com/240x36"
+                            width="240"
+                            height="36"
+                            alt="Logo"
+                          />
 
-	<section class="p-t-70 p-b-180">
-		<div class="container">
-			<div class="row">
-				<div class="col-4">
-					<div class="image-holder d-flex justify-content-end">
-						<img class="me-1" src="https://via.placeholder.com/187x280" alt="Mobile Home Page">
-					</div>
-				</div>
-				<div class="col-4 p-0 d-flex flex-column ">
-					<div class="text-center p-t-0">
-						<h1 class="fs-24">
-							早くいきたければ一人で進め。
-						</h1>
-						<h2 class="fs-24 p-t-15">
-							遠くまで行きたければ、みんなで進め。
-						</h2>
-					</div>
-					
-				</div>
-			</div>
-		</div>
-	</section>
+                          <h2
+                            class="fs-16 cl-primary p-t-22"
+                            style="letter-spacing: 6px"
+                          >
+                            ドマログ
+                          </h2>
+                        </div>
 
-	<section id="session3" class="p-t-40">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-11">
-					<div class="d-flex">
-						<img class="my-auto me-4" src="images/Group 213.png" width="38px" height="38px" alt="">
-						<h1 class="fs-40 fw-1000">
-							Feature
-						</h1>
-					</div>
-						<h1 class="fs-64 fw-1000 m-t-50">
-							仲間と一緒に進もう。
-						</h1>
-				</div>
-			</div>
-		</div>
-	</section>
-	
-	<section class="m-t-70">
-		<div class="row align-items-end g-0 position-relative">
-			<div class="col-md-6 order-md-last text-end">
-				<div class="img-layer-border-1-parent">
-							<img class="img-layer-border-1" src="https://via.placeholder.com/648x365"  alt="Logo">
-				</div>
-			</div>
-			<div class="col-md-6">
-						<div class="p-lr-40 p-t-75 p-b-75 position-relative zm-1 bg-white" style="margin-right: -100px; margin-bottom: -90px;" >
-							<h1 class="fs-24">
-								体験はsaveできる
-							</h1>
-							<h2 class="fs-16 m-t-30 lh-18">
-								「メモをとる」というちょっとしたことからはじめよう。たかがメモと思うかもしれ<br>
-								ない。しかし、メモをとることで上達することを知っている人たちはその小さくて大<br>
-								きな行動をしている。君に必要なのはたった10秒。さあ、体験を価値に変えよう。
-							</h2>
-							<div class="d-flex align-items-center m-t-30">
-								<h3 class="cl-secondary fs-16">
-									機能：
-								</h3>
-								<button class="tertiary-button fs-16 ms-2">
-									MEMO
-								</button>
-							</div>
-						</div>
-			</div>
-		</div>
-	</section>
+                        <div
+                          class="position-absolute bottom-0 start-0 end-0 mx-auto m-b-50"
+                        >
+                          <button class="default-button mx-auto">
+                            インストール
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-7">
+                      <img
+                        src="https://via.placeholder.com/145x288"
+                        alt="Logo"
+                      />
+                      <img
+                        src="https://via.placeholder.com/144x286"
+                        alt="Logo"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        class="position-absolute top-10 left-10 zm-1"
+        src="images/mv.png"
+        alt=""
+      />
+    </section>
 
-	<section class="m-t-175">
-		<div class="row align-items-end g-0 position-relative">
-			<div class="col-md-5 order-md-start text-start">
-				<div class="img-layer-border-2-parent">
-							<img class="img-layer-border-2" src="https://via.placeholder.com/546x364"  alt="Logo">
-				</div>
-			</div>
-			<div class="col-md-7">
-						<div class="p-l-90 p-t-77 p-b-75 position-relative zm-2 bg-white" style="margin-left: -80px; margin-bottom: 110px;" >
-							<h1 class="fs-24">
-								体験を共有しよう
-							</h1>
-							<h2 class="fs-16 m-t-33 lh-18">
-								どのようにメモを取ればよいのか、その内容は相応しいのか。これを解決するために<br>
-								「仲間と共有する」という手がある。自分だけで考えるのではなく、多くのプレイ<br>
-								ヤーの経験を反映する。それは世界中のプレイヤーが自分のコーチになるとも言え<br>
-								る。
-							</h2>
-							<div class="d-flex align-items-center m-t-0">
-								<h3 class="cl-secondary fs-16">
-									機能：
-								</h3>
-								<button class="tertiary-button fs-16 ms-2">
-									NOTE
-								</button>
-								<button class="tertiary-button fs-16 ms-3">
-									FORUM
-								</button>
-							</div>
-						</div>
-			</div>
-		</div>
-	</section>
+    <section id="session4" class="m-t-200 bg-white p-b-90">
+      <div class="container">
+        <div class="row">
+          <div class="text-center m-t-75">
+            <img
+              src="images/Group 215.png"
+              width="38px"
+              height="38px"
+              alt="spin"
+            />
+            <h1 class="fs-40 fw-1000 m-t-13">Contact</h1>
+            <h2 class="fs-24 m-t-60 lh-18">
+              お問い合わせはDiscordチャンネルから。
+            </h2>
+            <button class="secondary-button mx-auto m-t-40">
+              Discordに参加
+            </button>
+          </div>
 
-	<section class="m-t-80">
-		<div class="row align-items-end g-0 position-relative">
-			<div class="col-md-6 order-md-last text-end">
-				<div class="img-layer-border-3-parent">
-							<img class="img-layer-border-3" src="https://via.placeholder.com/648x365"  alt="Logo">
-				</div>
-			</div>
-			<div class="col-md-6">
-						<div class="p-lr-40 p-t-75 p-b-75 position-relative zm-1 bg-white" style="margin-right: -100px; margin-bottom: 90px;" >
-							<h1 class="fs-24">
-								信頼できる仲間とつながろう
-							</h1>
-							<h2 class="fs-16 m-t-30 lh-18">
-								「簡単に仲間の取り組み方がみえる。今の君に必要なことを的確にアドバイスできるエ<br>
-								キスパートがいる。悩みをシェアしてみよう。一方で君の経験を必要としている仲間<br>
-								がいる。知恵を伝えよう。近いレベルでプレーできる仲間が増えた方がもっとワ<br>
-								クワクできる。
-							</h2>
-							<div class="d-flex align-items-center m-t-30">
-								<h3 class="cl-secondary fs-16">
-									機能：
-								</h3>
-								<button class="tertiary-button fs-16 ms-2">
-									FORUM
-								</button>
-								<button class="tertiary-button fs-16 ms-3">
-									EVENT
-								</button>
-							</div>
-						</div>
-			</div>
-		</div>
-	</section>
+          <div class="text-center m-t-125">
+            <h2 class="fs-14">
+              フォームからのお問い合わせをご希望の方はこちら
+            </h2>
+            <img
+              class="mt-3"
+              src="images/Polygon 2.png"
+              width="16"
+              height="14"
+              alt="triangle"
+            />
+          </div>
 
-	<section class="p-t-150 p-b-120 position-relative">
-		<div class="container">
-			<div class="row">
-				<div class="col-12 text-center">
+          <div class="container d-flex justify-content-center m-t-38">
+            <form class="col-lg-7 fs-16">
+              <div class="row mb-3">
+                <label for="inputName" class="col-lg-3 col-form-label"
+                  >お名前 <span class="cl-primary">※</span></label
+                >
+                <div class="col-lg-9">
+                  <input
+                    type="text"
+                    class="form-control border-primary"
+                    id="inputName"
+                    placeholder=""
+                  />
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputEmail" class="col-lg-3 col-form-label"
+                  >法人名</label
+                >
+                <div class="col-lg-9">
+                  <input
+                    type="email"
+                    class="form-control border-primary"
+                    id="inputEmail"
+                    placeholder=""
+                  />
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputPassword" class="col-lg-3 col-form-label"
+                  >部署名</label
+                >
+                <div class="col-lg-9">
+                  <input
+                    type="text"
+                    class="form-control border-primary"
+                    id="inputPassword"
+                    placeholder=""
+                  />
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputPassword" class="col-lg-3 col-form-label"
+                  >メールアドレス <span class="cl-primary">※</span></label
+                >
+                <div class="col-lg-9">
+                  <input
+                    type="text"
+                    class="form-control border-primary"
+                    id="inputPassword"
+                    placeholder=""
+                  />
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputPassword" class="col-lg-3 col-form-label"
+                  >電話番号</label
+                >
+                <div class="col-lg-9">
+                  <input
+                    type="text"
+                    class="form-control border-primary"
+                    id="inputPassword"
+                    placeholder=""
+                  />
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputPassword" class="col-lg-3 col-form-label"
+                  >お問い合わせ内容 <span class="cl-primary">※</span></label
+                >
+                <div class="col-lg-9">
+                  <textarea
+                    class="form-control border-primary"
+                    id="inputPassword"
+                    cols="30"
+                    placeholder=""
+                  ></textarea>
+                </div>
+              </div>
+              <div class="d-flex">
+                <div class="col-lg-12 d-flex justify-content-center m-t-30">
+                  <button type="submit" class="secondary-button">
+                    送信内容の確認
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
-					<div id="Title-1" class="m-t-70">
-						<h1 class="fs-48 lh-base" style="font-weight: 1000;">
-							人生に刺激とワクワクをあたえる<br>
-							一歩をふみ出そう。
-						</h1>
-					</div>
+    <footer>
+      <div class="container">
+        <div class="d-flex justify-content-center m-t-80">
+          <div class="d-inline-flex flex-column align-items-center">
+            <img
+              class=""
+              src="https://via.placeholder.com/114x48"
+              style="display: inline-table"
+              alt="Logo"
+            />
 
+            <div class="d-flex justify-content-between w-100 m-t-40">
+              <div>
+                <a href="" class="cl-black"
+                  ><i class="fab fa-twitter fs-24"></i
+                ></a>
+              </div>
+              <div>
+                <a href="" class="cl-black"
+                  ><i class="fab fa-discord fs-24"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="text-center fs-16 fw-1000 m-t-100 mb-3"
+          style="letter-spacing: 3px"
+        >
+          Copyright ©2023 PwR
+        </div>
+      </div>
+    </footer>
 
-					<div class="m-t-80">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- Glightbox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js"></script>
+    <!-- A touchable Pure Javascript lightbox with mobile and video support. -->
 
-						<div class="row justify-content-center text-center">
-							<div class="col-7 g-0">
-								<div class="row">
-									<div class="col-5 row g-0 flex-column justify-content-end">
-
-										<div class="position-relative d-flex flex-column justify-content-center text-center">
-
-											<div class="d-flex flex-column text-center p-b-160">
-												<img class="mx-auto" src="https://via.placeholder.com/240x36" width="240" height="36" alt="Logo">
-
-												<h2 class="fs-16 cl-primary p-t-22" style="letter-spacing: 6px;">
-													ドマログ
-												</h2>
-											</div>
-											
-											<div class="position-absolute bottom-0 start-0 end-0 mx-auto m-b-50">
-												<button class="default-button mx-auto">
-													インストール
-												</button>
-											</div>
-										</div>
-
-									</div>
-									<div class="col-7">
-											<img src="https://via.placeholder.com/145x288" alt="Logo">
-											<img src="https://via.placeholder.com/144x286" alt="Logo">
-									</div>
-								</div>
-							</div>
-						</div>
-
-					</div>
-
-				</div>
-			</div>
-		</div>
-		<img class="position-absolute top-10 left-10 zm-1" src="images/mv.png" alt="">
-
-	</section>
-
-	<section id="session4" class="m-t-200 bg-white p-b-90">
-		<div class="container">
-			<div class="row">
-				<div class="text-center m-t-75">
-					<img src="images/Group 215.png" width="38px" height="38px" alt="spin">
-					<h1 class="fs-40 fw-1000 m-t-13">
-						Contact
-					</h1>
-					<h2 class="fs-24 m-t-60 lh-18">
-						お問い合わせはDiscordチャンネルから。
-					</h2>
-					<button class="secondary-button mx-auto m-t-40">
-						Discordに参加
-					</button>
-				</div>
-
-				<div class="text-center m-t-125">
-					<h2 class="fs-14">
-						フォームからのお問い合わせをご希望の方はこちら
-					</h2>
-					<img class="mt-3" src="images/Polygon 2.png" width="16" height="14" alt="triangle">
-				</div>
-
-				<div class="container d-flex justify-content-center m-t-38">
-					<form class="col-lg-7 fs-16">
-						<div class="row mb-3">
-							<label for="inputName" class="col-lg-3 col-form-label">お名前 <span class="cl-primary">※</span></label>
-							<div class="col-lg-9">
-								<input type="text" class="form-control border-primary" id="inputName" placeholder="">
-							</div>
-						</div>
-						<div class="row mb-3">
-							<label for="inputEmail" class="col-lg-3 col-form-label">法人名</label>
-							<div class="col-lg-9">
-								<input type="email" class="form-control border-primary" id="inputEmail" placeholder="">
-							</div>
-						</div>
-						<div class="row mb-3">
-							<label for="inputPassword" class="col-lg-3 col-form-label">部署名</label>
-							<div class="col-lg-9">
-								<input type="text" class="form-control border-primary" id="inputPassword" placeholder="">
-							</div>
-						</div>
-						<div class="row mb-3">
-							<label for="inputPassword" class="col-lg-3 col-form-label">メールアドレス <span class="cl-primary">※</span></label>
-							<div class="col-lg-9">
-								<input type="text" class="form-control border-primary" id="inputPassword" placeholder="">
-							</div>
-						</div><div class="row mb-3">
-							<label for="inputPassword" class="col-lg-3 col-form-label">電話番号</label>
-							<div class="col-lg-9">
-								<input type="text" class="form-control border-primary" id="inputPassword" placeholder="">
-							</div>
-						</div><div class="row mb-3">
-							<label for="inputPassword" class="col-lg-3 col-form-label">お問い合わせ内容 <span class="cl-primary">※</span></label>
-							<div class="col-lg-9">
-								<textarea class="form-control border-primary" id="inputPassword" cols="30" placeholder=""></textarea>
-							</div>
-						</div>
-						<div class="d-flex">
-							<div class="col-lg-12 d-flex justify-content-center m-t-30">
-								<button type="submit" class="secondary-button">送信内容の確認</button>
-							</div>
-						</div>
-					</form>
-				</div>
-				
-				
-			</div>
-		</div>
-	</section>
-
-	<footer>
-		<div class="container">
-			<div class="d-flex justify-content-center m-t-80">
-
-				<div class="d-inline-flex flex-column align-items-center">
-					<img class="" src="https://via.placeholder.com/114x48" style="display: inline-table;" alt="Logo">
-	
-					<div class="d-flex justify-content-between w-100 m-t-40">
-						<div><a href="" class="cl-black"><i class="fab fa-twitter fs-24"></i></a></div>
-						<div><a href="" class="cl-black"><i class="fab fa-discord fs-24"></i></a></div>
-					</div>
-
-				</div>
-
-			</div>
-			<div class="text-center fs-16 fw-1000 m-t-100 mb-3" style="letter-spacing: 3px;">
-					Copyright ©2023 PwR
-				</div>
-		</div>
-		
-	</footer>
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-	<!-- Glightbox -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js"></script>
-	<!-- A touchable Pure Javascript lightbox with mobile and video support. -->
-
-	<!-- Splitting -->
-	<script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
-	<!-- Splitting create elements and adds CSS variables to unlock amazing possibilities for animating text, grids, and more! -->
-	<script src="main.js"></script>
-</body>
+    <!-- Splitting -->
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+    <!-- Splitting create elements and adds CSS variables to unlock amazing possibilities for animating text, grids, and more! -->
+    <script src="main.js"></script>
+  </body>
 </html>
