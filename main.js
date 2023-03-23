@@ -1,5 +1,11 @@
-const menu = document.querySelector('.menu');
+$(document).ready(function(){
+  $("#menu-btn-close").click(function(){
+    $(this).parent().parent().hide();
 
-menu.addEventListener('click', () => {
-  menu.classList.toggle('change');
-});
+  }); 
+  $("#menu-btn-open").click(function(){
+    $(this).next().show();
+
+  }); 
+  
+})
