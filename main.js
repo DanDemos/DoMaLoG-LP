@@ -43,5 +43,30 @@ mediaQueries.forEach(({ name, query }) => {
   mediaQuery.addEventListener('change', () => {
     handleMediaQueryChange({ name, matches: mediaQuery.matches });
   });
+
+  // const handleMediaQueryChange = ({ name, matches }) => {
+  //   if (name === 'phone' || name === 'tablet') {
+  //     document.querySelectorAll('.show-on-phone').forEach(element => {
+  //       if (matches || !element.classList.contains('show-on-tablet')) {
+  //         element.hidden = false;
+  //       } else {
+  //         element.hidden = true;
+  //       }
+  //     });
+  //     document.querySelectorAll('.show-on-tablet').forEach(element => {
+  //       if (matches || !element.classList.contains('show-on-phone')) {
+  //         element.hidden = false;
+  //       } else {
+  //         element.hidden = true;
+  //       }
+  //     });
+  //   } else if (name === 'desktop' && showOnDesktop) {
+  //     console.log(matches);
+  //     showOnDesktop.forEach(showOnDesktop_element => {
+  //       matches ? (showOnDesktop_element.hidden = false) : (showOnDesktop_element.hidden = true);
+  //     });
+  //   }
+  //   console.log(`${name} is ${matches ? 'active' : 'inactive'}`);
+  // };
 });
 
