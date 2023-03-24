@@ -15,34 +15,25 @@ const mediaQueries = [
   { name: 'desktop', query: '(min-width: 992px)' },
 ];
 
-const showOnPhone = document.querySelectorAll('.show-on-phone');
-const showOnTablet = document.querySelectorAll('.show-on-tablet');
-const showOnDesktop = document.querySelectorAll('.show-on-desktop');
+const handleMediaQueryChange = () => {
+  const elementsBySize = [
+    { size: 'phone', elements: document.querySelectorAll('.show-on-phone') },
+    { size: 'tablet', elements: document.querySelectorAll('.show-on-tablet') },
+    { size: 'desktop', elements: document.querySelectorAll('.show-on-desktop') }
+  ];
 
-const handleMediaQueryChange = ({ name, matches }) => {
-  if (name === 'phone') {
-    showOnPhone?.forEach(showOnPhone_element => {
-      const shouldShow = matches || (showOnPhone_element.classList.contains('show-on-tablet') && window.matchMedia(mediaQueries[1].query).matches);
-      showOnPhone_element.hidden = !shouldShow;
+  elementsBySize.forEach(({ size, elements }) => {
+    const otherSizes = elementsBySize.filter(s => s.size !== size);
+    elements?.forEach(element => {
+      const shouldShow = window.matchMedia(mediaQueries.find(q => q.name === size).query).matches || otherSizes.some(s => element.classList.contains(`show-on-${s.size}`) && window.matchMedia(mediaQueries.find(q => q.name === s.size).query).matches);
+      element.hidden = !shouldShow;
     });
-  } else if (name === 'tablet') {
-    showOnTablet?.forEach(showOnTablet_element => {
-      const shouldShow = matches || (showOnTablet_element.classList.contains('show-on-phone') && window.matchMedia(mediaQueries[0].query).matches) || (showOnTablet_element.classList.contains('show-on-desktop') && window.matchMedia(mediaQueries[2].query).matches);
-      showOnTablet_element.hidden = !shouldShow;
-    });
-  } else if (name === 'desktop') {
-    showOnDesktop?.forEach(showOnDesktop_element => {
-      const shouldShow = matches || (showOnDesktop_element.classList.contains('show-on-tablet') && window.matchMedia(mediaQueries[1].query).matches) || (showOnDesktop_element.classList.contains('show-on-phone') && window.matchMedia(mediaQueries[0].query).matches);
-      showOnDesktop_element.hidden = !shouldShow;
-    });
-  }
-  console.log(`${name} is ${matches ? 'active' : 'inactive'}`);
+  });
 };
 
-mediaQueries.forEach(({ name, query }) => {
+mediaQueries.forEach(({ query }) => {
   const mediaQuery = window.matchMedia(query);
-  handleMediaQueryChange({ name, matches: mediaQuery.matches });
-  mediaQuery.addEventListener('change', () => {
-    handleMediaQueryChange({ name, matches: mediaQuery.matches });
-  });
+  handleMediaQueryChange();
+  mediaQuery.addEventListener('change', handleMediaQueryChange);
 });
+
