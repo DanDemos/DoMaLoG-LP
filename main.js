@@ -20,18 +20,20 @@ const showOnTablet = document.querySelectorAll('.show-on-tablet');
 const showOnDesktop = document.querySelectorAll('.show-on-desktop');
 
 const handleMediaQueryChange = ({ name, matches }) => {
-  if (name === 'phone' && showOnPhone) {
-    showOnPhone.forEach(showOnPhone_element => {
-      matches ? showOnPhone_element.hidden = false : showOnPhone_element.hidden = true;
+  if (name === 'phone') {
+    showOnPhone?.forEach(showOnPhone_element => {
+      const shouldShow = matches || (showOnPhone_element.classList.contains('show-on-tablet') && window.matchMedia(mediaQueries[1].query).matches);
+      showOnPhone_element.hidden = !shouldShow;
     });
-  } else if (name === 'tablet' && showOnTablet) {
-    showOnTablet.forEach(showOnTablet_element => {
-      matches ? showOnTablet_element.hidden = false : showOnTablet_element.hidden = true;
+  } else if (name === 'tablet') {
+    showOnTablet?.forEach(showOnTablet_element => {
+      const shouldShow = matches || (showOnTablet_element.classList.contains('show-on-phone') && window.matchMedia(mediaQueries[0].query).matches) || (showOnTablet_element.classList.contains('show-on-desktop') && window.matchMedia(mediaQueries[2].query).matches);
+      showOnTablet_element.hidden = !shouldShow;
     });
-  } else if (name === 'desktop' && showOnDesktop) {
-    console.log(matches)
-    showOnDesktop.forEach(showOnDesktop_element => {
-      matches ? showOnDesktop_element.hidden = false : showOnDesktop_element.hidden = true;
+  } else if (name === 'desktop') {
+    showOnDesktop?.forEach(showOnDesktop_element => {
+      const shouldShow = matches || (showOnDesktop_element.classList.contains('show-on-tablet') && window.matchMedia(mediaQueries[1].query).matches) || (showOnDesktop_element.classList.contains('show-on-phone') && window.matchMedia(mediaQueries[0].query).matches);
+      showOnDesktop_element.hidden = !shouldShow;
     });
   }
   console.log(`${name} is ${matches ? 'active' : 'inactive'}`);
@@ -43,30 +45,4 @@ mediaQueries.forEach(({ name, query }) => {
   mediaQuery.addEventListener('change', () => {
     handleMediaQueryChange({ name, matches: mediaQuery.matches });
   });
-
-  // const handleMediaQueryChange = ({ name, matches }) => {
-  //   if (name === 'phone' || name === 'tablet') {
-  //     document.querySelectorAll('.show-on-phone').forEach(element => {
-  //       if (matches || !element.classList.contains('show-on-tablet')) {
-  //         element.hidden = false;
-  //       } else {
-  //         element.hidden = true;
-  //       }
-  //     });
-  //     document.querySelectorAll('.show-on-tablet').forEach(element => {
-  //       if (matches || !element.classList.contains('show-on-phone')) {
-  //         element.hidden = false;
-  //       } else {
-  //         element.hidden = true;
-  //       }
-  //     });
-  //   } else if (name === 'desktop' && showOnDesktop) {
-  //     console.log(matches);
-  //     showOnDesktop.forEach(showOnDesktop_element => {
-  //       matches ? (showOnDesktop_element.hidden = false) : (showOnDesktop_element.hidden = true);
-  //     });
-  //   }
-  //   console.log(`${name} is ${matches ? 'active' : 'inactive'}`);
-  // };
 });
-
