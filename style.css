@@ -77,6 +77,12 @@ a:hover{
 .f-en{
   
 }
+@media (max-width: 575px) {
+  .vw170-phone{
+    height: 170vw!important;
+  }
+}
+
 
 .menu {
   display: flex;
