@@ -78,8 +78,8 @@ a:hover{
   
 }
 @media (max-width: 575px) {
-  .vw170-phone{
-    height: 170vw!important;
+  .vh100-phone{
+    height: 100vh;
   }
 }
 
