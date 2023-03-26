@@ -317,6 +317,7 @@ a:hover{
 }
 
 .card-2{
+  margin-left: -50px; 
   margin-bottom: 110px;
 }
 
@@ -330,6 +331,7 @@ a:hover{
     margin-bottom: 0px;
   }
   .card-2{
+    margin-left: 0px; 
     margin-bottom: 0px;
   }
   .card-3{
