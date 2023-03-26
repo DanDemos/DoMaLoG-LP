@@ -340,6 +340,14 @@ a:hover{
   }
 }
 
+@media (min-width: 992px) and (max-width: 1200px) {
+  .card-1{
+    margin-right: -10px; 
+  }
+}
+
+
+
 /* float button */
 .floating {
   background-color: white;
