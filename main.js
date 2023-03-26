@@ -1,11 +1,11 @@
 $(document).ready(function(){
   $("#menu-btn-close").click(function(){
     $(this).parent().parent().hide();
-
+    $("#blackscreen").hide();
   }); 
   $("#menu-btn-open").click(function(){
     $(this).next().show();
-
+    $("#blackscreen").show();
   }); 
 })
 
