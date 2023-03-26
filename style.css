@@ -357,7 +357,6 @@ a:hover{
 }
 
 
-
 /* float button */
 .floating {
   background-color: white;
@@ -377,16 +376,27 @@ a:hover{
   }
 }
 
+#float-menu{
+  bottom: 55%; 
+  right: 2%;
+}
+
 .floating img {
   max-width: 100%;
   height: auto;
   max-height: 100%;
+  max-width: 60px;
+    max-height: 60px;
 }
 
 @media screen and (min-width: 768px) {
   .floating img {
     max-width: 60px;
     max-height: 60px;
+  }
+  #float-menu{
+    bottom: 80%; 
+    right: 2%;
   }
 }
 
