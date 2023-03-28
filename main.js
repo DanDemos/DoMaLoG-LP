@@ -1,12 +1,12 @@
-$(document).ready(function(){
-  $("#menu-btn-close").click(function(){
+$(document).ready(function () {
+  $("#menu-btn-close").click(function () {
     $(this).parent().parent().hide();
     $("#blackscreen").hide();
-  }); 
-  $("#menu-btn-open").click(function(){
+  });
+  $("#menu-btn-open").click(function () {
     $(this).next().show();
     $("#blackscreen").show();
-  }); 
+  });
 })
 
 const mediaQueries = [
@@ -36,4 +36,23 @@ mediaQueries.forEach(({ query }) => {
   handleMediaQueryChange();
   mediaQuery.addEventListener('change', handleMediaQueryChange);
 });
+
+const elements = document.querySelectorAll('.typing-effect');
+
+elements.forEach(element => {
+  const original = element.innerHTML;
+  element.innerHTML = '';
+
+  var abc = original.split('<br>');
+  console.log(abc);
+
+  new TypeIt(element, {
+    strings: abc,
+    speed: 75,
+    loop: false,
+  }).go();
+});
+
+
+
 
