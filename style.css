@@ -7,7 +7,7 @@
 
 /*Text Colors */
 a{
-  color: black;
+  color: #393636;
 }
 
 a:hover{
@@ -72,6 +72,7 @@ a:hover{
 
 .f-jp{
   font-family: source-han-sans-japanese, sans-serif;
+  word-break: break-word;
 }
 
 .f-en{
@@ -150,6 +151,7 @@ a:hover{
   width: 240px;
   height: 48px;
   transition: 0.3s;
+  letter-spacing: 1.6px;
 }
 
 .default-button::after {
@@ -168,6 +170,7 @@ a:hover{
   width: 241px;
   height: 49px;
   font-size: 18px;
+  letter-spacing: 1.8px;
   transition: 0.3s;
 }
 
@@ -187,6 +190,7 @@ a:hover{
   border: #E36A54 2px solid;
   color: #E36A54;
   font-size: 16px;
+  letter-spacing: 1.6px;
   width: 240px;
   height: 48px;
   transition: 0.3s;
@@ -208,6 +212,7 @@ a:hover{
   width: 241px;
   height: 49px;
   font-size: 18px;
+  letter-spacing: 1.8px;
   transition: 0.3s;
 }
 
@@ -226,6 +231,7 @@ a:hover{
   border-radius: 50px;
   color: white;
   font-size: 16px;
+  letter-spacing: 1.6px;
   width: 103px;
   height: 32px;
   transition: 0.3s;
@@ -321,17 +327,17 @@ a:hover{
 }
 
 .card-1{
-  margin-right: -100px; 
+  /* margin-right: -100px;  */
   margin-bottom: -90px;
 }
 
 .card-2{
-  margin-left: -50px; 
+  /* margin-left: -50px;  */
   margin-bottom: 210px;
 }
 
 .card-3{
-  margin-right: -100px; 
+  /* margin-right: -100px;  */
   margin-bottom: 190px;
 }
 @media (max-width: 991px) {
@@ -371,17 +377,18 @@ a:hover{
   background-color: white;
   border-radius: 50%;
   padding-left: 15px;
-  padding-top: 18px;
+  padding-top: 12px;
   padding-right: 15px;
-  padding-bottom: 12px;
+  padding-bottom: 18px;
+  box-shadow: 0px 0px 20px -8px #393636;
 }
 
 @media screen and (min-width: 768px) {
   .floating {
     padding-left: 15px;
-    padding-top: 18px;
+    padding-top: 12px;
     padding-right: 15px;
-    padding-bottom: 12px;
+    padding-bottom: 18px;
   }
 }
 
@@ -426,4 +433,17 @@ a:hover{
   .m-t-lg-150{
     margin-top: 150px;
   }
+}
+
+.app-icons {
+  display: flex;
+  align-items: center;
+}
+
+.android {
+  width: 200px;
+}
+
+.apple {
+  width: 164px;
 }

@@ -10,7 +10,7 @@
 body, html {
 	font-family: Arial, sans-serif;
 	font-size: 16px;
-	color: #000;
+	color: #393636;
 
 	height: 120%;
 	background-color: #f2f2f2;
@@ -270,6 +270,80 @@ iframe {border: none;}
 .fs-200 {font-size: 200px;}
 
 /*//////////////////////////////////////////////////////////////////
+[ LETTER SPACING ]*/
+.letter-space-100 {letter-spacing: 1px;}
+.letter-space-110 {letter-spacing: 1.1px;}
+.letter-space-120 {letter-spacing: 1.2px;}
+.letter-space-130 {letter-spacing: 1.3px;}
+.letter-space-140 {letter-spacing: 1.4px;}
+.letter-space-150 {letter-spacing: 1.5px;}
+.letter-space-160 {letter-spacing: 1.6px;}
+.letter-space-170 {letter-spacing: 1.7px;}
+.letter-space-180 {letter-spacing: 1.8px;}
+.letter-space-190 {letter-spacing: 1.9px;}
+.letter-space-200 {letter-spacing: 2px;}
+.letter-space-210 {letter-spacing: 2.1px;}
+.letter-space-220 {letter-spacing: 2.2px;}
+.letter-space-230 {letter-spacing: 2.3px;}
+.letter-space-240 {letter-spacing: 2.4px;}
+.letter-space-250 {letter-spacing: 2.5px;}
+.letter-space-260 {letter-spacing: 2.6px;}
+.letter-space-270 {letter-spacing: 2.7px;}
+.letter-space-280 {letter-spacing: 2.8px;}
+.letter-space-290 {letter-spacing: 2.9px;}
+.letter-space-300 {letter-spacing: 3px;}
+.letter-space-310 {letter-spacing: 3.1px;}
+.letter-space-320 {letter-spacing: 3.2px;}
+.letter-space-330 {letter-spacing: 3.3px;}
+.letter-space-340 {letter-spacing: 3.4px;}
+.letter-space-350 {letter-spacing: 3.5px;}
+.letter-space-360 {letter-spacing: 3.6px;}
+.letter-space-370 {letter-spacing: 3.7px;}
+.letter-space-380 {letter-spacing: 3.8px;}
+.letter-space-390 {letter-spacing: 3.9px;}
+.letter-space-400 {letter-spacing: 4px;}
+.letter-space-410 {letter-spacing: 4.1px;}
+.letter-space-420 {letter-spacing: 4.2px;}
+.letter-space-430 {letter-spacing: 4.3px;}
+.letter-space-440 {letter-spacing: 4.4px;}
+.letter-space-450 {letter-spacing: 4.5px;}
+.letter-space-460 {letter-spacing: 4.6px;}
+.letter-space-470 {letter-spacing: 4.7px;}
+.letter-space-480 {letter-spacing: 4.8px;}
+.letter-space-490 {letter-spacing: 4.9px;}
+.letter-space-500 {letter-spacing: 5px;}
+.letter-space-510 {letter-spacing: 5.1px;}
+.letter-space-520 {letter-spacing: 5.2px;}
+.letter-space-530 {letter-spacing: 5.3px;}
+.letter-space-540 {letter-spacing: 5.4px;}
+.letter-space-550 {letter-spacing: 5.5px;}
+.letter-space-560 {letter-spacing: 5.6px;}
+.letter-space-570 {letter-spacing: 5.7px;}
+.letter-space-580 {letter-spacing: 5.8px;}
+.letter-space-590 {letter-spacing: 5.9px;}
+.letter-space-600 {letter-spacing: 6px;}
+.letter-space-610 {letter-spacing: 6.1px;}
+.letter-space-620 {letter-spacing: 6.2px;}
+.letter-space-630 {letter-spacing: 6.3px;}
+.letter-space-640 {letter-spacing: 6.4px;}
+.letter-space-650 {letter-spacing: 6.5px;}
+.letter-space-660 {letter-spacing: 6.6px;}
+.letter-space-670 {letter-spacing: 6.7px;}
+.letter-space-680 {letter-spacing: 6.8px;}
+.letter-space-690 {letter-spacing: 6.9px;}
+.letter-space-700 {letter-spacing: 7px;}
+.letter-space-710 {letter-spacing: 7.1px;}
+.letter-space-720 {letter-spacing: 7.2px;}
+.letter-space-730 {letter-spacing: 7.3px;}
+.letter-space-740 {letter-spacing: 7.4px;}
+.letter-space-750 {letter-spacing: 7.5px;}
+.letter-space-760 {letter-spacing: 7.6px;}
+.letter-space-770 {letter-spacing: 7.7px;}
+.letter-space-780 {letter-spacing: 7.8px;}
+.letter-space-790 {letter-spacing: 7.9px;}
+.letter-space-800 {letter-spacing: 8px;}
+
+/*///////////////2//////////////////////////////////////////////////
 [ PADDING ]*/
 .p-t-0, .p-tb-0, .p-all-0 {padding-top: 0px;}
 .p-t-1, .p-tb-1, .p-all-1 {padding-top: 1px;}
@@ -3221,16 +3295,16 @@ iframe {border: none;}
 /*//////////////////////////////////////////////////////////////////
 [ Text Color ]*/
 .cl-white {color: white;}
-.cl-black {color: black;}
+.cl-black {color: #393636;}
 
 /*//////////////////////////////////////////////////////////////////
 [ Text Hover Color ]*/
 .cl-hover-white:hover {color: white;}
-.cl-hover-black:hover {color: black;}
+.cl-hover-black:hover {color: #393636;}
 /*//////////////////////////////////////////////////////////////////
 [ Background Color ]*/
 .bg-white {background-color: white!important;}
-.bg-black {background-color: black;}
+.bg-black {background-color: #393636;}
 .bg-blue {background-color: blue;}
 
 /*------------------------------------------------------------------
@@ -3278,7 +3352,7 @@ iframe {border: none;}
 /*//////////////////////////////////////////////////////////////////
 [ BACKGROUND ]*/
 .bgwhite {background-color: white;}
-.bgblack {background-color: black;}
+.bgblack {background-color: #393636;}
 
 /*//////////////////////////////////////////////////////////////////
 [ EFFECT ]*/
@@ -4297,6 +4371,80 @@ https://www.segasammy.co.jp/english/
 .fs-sm-198 {font-size: 198px;}
 .fs-sm-199 {font-size: 199px;}
 .fs-sm-200 {font-size: 200px;}
+
+/*//////////////////////////////////////////////////////////////////
+[ LETTER SPACING ]*/
+.letter-space-sm-100 {letter-spacing: 1px;}
+.letter-space-sm-110 {letter-spacing: 1.1px;}
+.letter-space-sm-120 {letter-spacing: 1.2px;}
+.letter-space-sm-130 {letter-spacing: 1.3px;}
+.letter-space-sm-140 {letter-spacing: 1.4px;}
+.letter-space-sm-150 {letter-spacing: 1.5px;}
+.letter-space-sm-160 {letter-spacing: 1.6px;}
+.letter-space-sm-170 {letter-spacing: 1.7px;}
+.letter-space-sm-180 {letter-spacing: 1.8px;}
+.letter-space-sm-190 {letter-spacing: 1.9px;}
+.letter-space-sm-200 {letter-spacing: 2px;}
+.letter-space-sm-210 {letter-spacing: 2.1px;}
+.letter-space-sm-220 {letter-spacing: 2.2px;}
+.letter-space-sm-230 {letter-spacing: 2.3px;}
+.letter-space-sm-240 {letter-spacing: 2.4px;}
+.letter-space-sm-250 {letter-spacing: 2.5px;}
+.letter-space-sm-260 {letter-spacing: 2.6px;}
+.letter-space-sm-270 {letter-spacing: 2.7px;}
+.letter-space-sm-280 {letter-spacing: 2.8px;}
+.letter-space-sm-290 {letter-spacing: 2.9px;}
+.letter-space-sm-300 {letter-spacing: 3px;}
+.letter-space-sm-310 {letter-spacing: 3.1px;}
+.letter-space-sm-320 {letter-spacing: 3.2px;}
+.letter-space-sm-330 {letter-spacing: 3.3px;}
+.letter-space-sm-340 {letter-spacing: 3.4px;}
+.letter-space-sm-350 {letter-spacing: 3.5px;}
+.letter-space-sm-360 {letter-spacing: 3.6px;}
+.letter-space-sm-370 {letter-spacing: 3.7px;}
+.letter-space-sm-380 {letter-spacing: 3.8px;}
+.letter-space-sm-390 {letter-spacing: 3.9px;}
+.letter-space-sm-400 {letter-spacing: 4px;}
+.letter-space-sm-410 {letter-spacing: 4.1px;}
+.letter-space-sm-420 {letter-spacing: 4.2px;}
+.letter-space-sm-430 {letter-spacing: 4.3px;}
+.letter-space-sm-440 {letter-spacing: 4.4px;}
+.letter-space-sm-450 {letter-spacing: 4.5px;}
+.letter-space-sm-460 {letter-spacing: 4.6px;}
+.letter-space-sm-470 {letter-spacing: 4.7px;}
+.letter-space-sm-480 {letter-spacing: 4.8px;}
+.letter-space-sm-490 {letter-spacing: 4.9px;}
+.letter-space-sm-500 {letter-spacing: 5px;}
+.letter-space-sm-510 {letter-spacing: 5.1px;}
+.letter-space-sm-520 {letter-spacing: 5.2px;}
+.letter-space-sm-530 {letter-spacing: 5.3px;}
+.letter-space-sm-540 {letter-spacing: 5.4px;}
+.letter-space-sm-550 {letter-spacing: 5.5px;}
+.letter-space-sm-560 {letter-spacing: 5.6px;}
+.letter-space-sm-570 {letter-spacing: 5.7px;}
+.letter-space-sm-580 {letter-spacing: 5.8px;}
+.letter-space-sm-590 {letter-spacing: 5.9px;}
+.letter-space-sm-600 {letter-spacing: 6px;}
+.letter-space-sm-610 {letter-spacing: 6.1px;}
+.letter-space-sm-620 {letter-spacing: 6.2px;}
+.letter-space-sm-630 {letter-spacing: 6.3px;}
+.letter-space-sm-640 {letter-spacing: 6.4px;}
+.letter-space-sm-650 {letter-spacing: 6.5px;}
+.letter-space-sm-660 {letter-spacing: 6.6px;}
+.letter-space-sm-670 {letter-spacing: 6.7px;}
+.letter-space-sm-680 {letter-spacing: 6.8px;}
+.letter-space-sm-690 {letter-spacing: 6.9px;}
+.letter-space-sm-700 {letter-spacing: 7px;}
+.letter-space-sm-710 {letter-spacing: 7.1px;}
+.letter-space-sm-720 {letter-spacing: 7.2px;}
+.letter-space-sm-730 {letter-spacing: 7.3px;}
+.letter-space-sm-740 {letter-spacing: 7.4px;}
+.letter-space-sm-750 {letter-spacing: 7.5px;}
+.letter-space-sm-760 {letter-spacing: 7.6px;}
+.letter-space-sm-770 {letter-spacing: 7.7px;}
+.letter-space-sm-780 {letter-spacing: 7.8px;}
+.letter-space-sm-790 {letter-spacing: 7.9px;}
+.letter-space-sm-800 {letter-spacing: 8px;}
 
 /*//////////////////////////////////////////////////////////////////
 [ MARGIN ]*/
@@ -5714,6 +5862,80 @@ https://www.segasammy.co.jp/english/
 .fs-md-200 {font-size: 200px;}
 
 /*//////////////////////////////////////////////////////////////////
+[ LETTER SPACING ]*/
+.letter-space-md-100 {letter-spacing: 1px;}
+.letter-space-md-110 {letter-spacing: 1.1px;}
+.letter-space-md-120 {letter-spacing: 1.2px;}
+.letter-space-md-130 {letter-spacing: 1.3px;}
+.letter-space-md-140 {letter-spacing: 1.4px;}
+.letter-space-md-150 {letter-spacing: 1.5px;}
+.letter-space-md-160 {letter-spacing: 1.6px;}
+.letter-space-md-170 {letter-spacing: 1.7px;}
+.letter-space-md-180 {letter-spacing: 1.8px;}
+.letter-space-md-190 {letter-spacing: 1.9px;}
+.letter-space-md-200 {letter-spacing: 2px;}
+.letter-space-md-210 {letter-spacing: 2.1px;}
+.letter-space-md-220 {letter-spacing: 2.2px;}
+.letter-space-md-230 {letter-spacing: 2.3px;}
+.letter-space-md-240 {letter-spacing: 2.4px;}
+.letter-space-md-250 {letter-spacing: 2.5px;}
+.letter-space-md-260 {letter-spacing: 2.6px;}
+.letter-space-md-270 {letter-spacing: 2.7px;}
+.letter-space-md-280 {letter-spacing: 2.8px;}
+.letter-space-md-290 {letter-spacing: 2.9px;}
+.letter-space-md-300 {letter-spacing: 3px;}
+.letter-space-md-310 {letter-spacing: 3.1px;}
+.letter-space-md-320 {letter-spacing: 3.2px;}
+.letter-space-md-330 {letter-spacing: 3.3px;}
+.letter-space-md-340 {letter-spacing: 3.4px;}
+.letter-space-md-350 {letter-spacing: 3.5px;}
+.letter-space-md-360 {letter-spacing: 3.6px;}
+.letter-space-md-370 {letter-spacing: 3.7px;}
+.letter-space-md-380 {letter-spacing: 3.8px;}
+.letter-space-md-390 {letter-spacing: 3.9px;}
+.letter-space-md-400 {letter-spacing: 4px;}
+.letter-space-md-410 {letter-spacing: 4.1px;}
+.letter-space-md-420 {letter-spacing: 4.2px;}
+.letter-space-md-430 {letter-spacing: 4.3px;}
+.letter-space-md-440 {letter-spacing: 4.4px;}
+.letter-space-md-450 {letter-spacing: 4.5px;}
+.letter-space-md-460 {letter-spacing: 4.6px;}
+.letter-space-md-470 {letter-spacing: 4.7px;}
+.letter-space-md-480 {letter-spacing: 4.8px;}
+.letter-space-md-490 {letter-spacing: 4.9px;}
+.letter-space-md-500 {letter-spacing: 5px;}
+.letter-space-md-510 {letter-spacing: 5.1px;}
+.letter-space-md-520 {letter-spacing: 5.2px;}
+.letter-space-md-530 {letter-spacing: 5.3px;}
+.letter-space-md-540 {letter-spacing: 5.4px;}
+.letter-space-md-550 {letter-spacing: 5.5px;}
+.letter-space-md-560 {letter-spacing: 5.6px;}
+.letter-space-md-570 {letter-spacing: 5.7px;}
+.letter-space-md-580 {letter-spacing: 5.8px;}
+.letter-space-md-590 {letter-spacing: 5.9px;}
+.letter-space-md-600 {letter-spacing: 6px;}
+.letter-space-md-610 {letter-spacing: 6.1px;}
+.letter-space-md-620 {letter-spacing: 6.2px;}
+.letter-space-md-630 {letter-spacing: 6.3px;}
+.letter-space-md-640 {letter-spacing: 6.4px;}
+.letter-space-md-650 {letter-spacing: 6.5px;}
+.letter-space-md-660 {letter-spacing: 6.6px;}
+.letter-space-md-670 {letter-spacing: 6.7px;}
+.letter-space-md-680 {letter-spacing: 6.8px;}
+.letter-space-md-690 {letter-spacing: 6.9px;}
+.letter-space-md-700 {letter-spacing: 7px;}
+.letter-space-md-710 {letter-spacing: 7.1px;}
+.letter-space-md-720 {letter-spacing: 7.2px;}
+.letter-space-md-730 {letter-spacing: 7.3px;}
+.letter-space-md-740 {letter-spacing: 7.4px;}
+.letter-space-md-750 {letter-spacing: 7.5px;}
+.letter-space-md-760 {letter-spacing: 7.6px;}
+.letter-space-md-770 {letter-spacing: 7.7px;}
+.letter-space-md-780 {letter-spacing: 7.8px;}
+.letter-space-md-790 {letter-spacing: 7.9px;}
+.letter-space-md-800 {letter-spacing: 8px;}
+
+/*//////////////////////////////////////////////////////////////////
 [ MARGIN ]*/
 .m-t-md-0, .m-tb-md-0, .m-all-md-0 {margin-top: 0px;}
 .m-t-md-1, .m-tb-md-1, .m-all-md-1 {margin-top: 1px;}
@@ -7127,7 +7349,79 @@ https://www.segasammy.co.jp/english/
 .fs-lg-198 {font-size: 198px;}
 .fs-lg-199 {font-size: 199px;}
 .fs-lg-200 {font-size: 200px;}
-
+/*//////////////////////////////////////////////////////////////////
+[ LETTER SPACING ]*/
+.letter-space-lg-100 {letter-spacing: 1px;}
+.letter-space-lg-110 {letter-spacing: 1.1px;}
+.letter-space-lg-120 {letter-spacing: 1.2px;}
+.letter-space-lg-130 {letter-spacing: 1.3px;}
+.letter-space-lg-140 {letter-spacing: 1.4px;}
+.letter-space-lg-150 {letter-spacing: 1.5px;}
+.letter-space-lg-160 {letter-spacing: 1.6px;}
+.letter-space-lg-170 {letter-spacing: 1.7px;}
+.letter-space-lg-180 {letter-spacing: 1.8px;}
+.letter-space-lg-190 {letter-spacing: 1.9px;}
+.letter-space-lg-200 {letter-spacing: 2px;}
+.letter-space-lg-210 {letter-spacing: 2.1px;}
+.letter-space-lg-220 {letter-spacing: 2.2px;}
+.letter-space-lg-230 {letter-spacing: 2.3px;}
+.letter-space-lg-240 {letter-spacing: 2.4px;}
+.letter-space-lg-250 {letter-spacing: 2.5px;}
+.letter-space-lg-260 {letter-spacing: 2.6px;}
+.letter-space-lg-270 {letter-spacing: 2.7px;}
+.letter-space-lg-280 {letter-spacing: 2.8px;}
+.letter-space-lg-290 {letter-spacing: 2.9px;}
+.letter-space-lg-300 {letter-spacing: 3px;}
+.letter-space-lg-310 {letter-spacing: 3.1px;}
+.letter-space-lg-320 {letter-spacing: 3.2px;}
+.letter-space-lg-330 {letter-spacing: 3.3px;}
+.letter-space-lg-340 {letter-spacing: 3.4px;}
+.letter-space-lg-350 {letter-spacing: 3.5px;}
+.letter-space-lg-360 {letter-spacing: 3.6px;}
+.letter-space-lg-370 {letter-spacing: 3.7px;}
+.letter-space-lg-380 {letter-spacing: 3.8px;}
+.letter-space-lg-390 {letter-spacing: 3.9px;}
+.letter-space-lg-400 {letter-spacing: 4px;}
+.letter-space-lg-410 {letter-spacing: 4.1px;}
+.letter-space-lg-420 {letter-spacing: 4.2px;}
+.letter-space-lg-430 {letter-spacing: 4.3px;}
+.letter-space-lg-440 {letter-spacing: 4.4px;}
+.letter-space-lg-450 {letter-spacing: 4.5px;}
+.letter-space-lg-460 {letter-spacing: 4.6px;}
+.letter-space-lg-470 {letter-spacing: 4.7px;}
+.letter-space-lg-480 {letter-spacing: 4.8px;}
+.letter-space-lg-490 {letter-spacing: 4.9px;}
+.letter-space-lg-500 {letter-spacing: 5px;}
+.letter-space-lg-510 {letter-spacing: 5.1px;}
+.letter-space-lg-520 {letter-spacing: 5.2px;}
+.letter-space-lg-530 {letter-spacing: 5.3px;}
+.letter-space-lg-540 {letter-spacing: 5.4px;}
+.letter-space-lg-550 {letter-spacing: 5.5px;}
+.letter-space-lg-560 {letter-spacing: 5.6px;}
+.letter-space-lg-570 {letter-spacing: 5.7px;}
+.letter-space-lg-580 {letter-spacing: 5.8px;}
+.letter-space-lg-590 {letter-spacing: 5.9px;}
+.letter-space-lg-600 {letter-spacing: 6px;}
+.letter-space-lg-610 {letter-spacing: 6.1px;}
+.letter-space-lg-620 {letter-spacing: 6.2px;}
+.letter-space-lg-630 {letter-spacing: 6.3px;}
+.letter-space-lg-640 {letter-spacing: 6.4px;}
+.letter-space-lg-650 {letter-spacing: 6.5px;}
+.letter-space-lg-660 {letter-spacing: 6.6px;}
+.letter-space-lg-670 {letter-spacing: 6.7px;}
+.letter-space-lg-680 {letter-spacing: 6.8px;}
+.letter-space-lg-690 {letter-spacing: 6.9px;}
+.letter-space-lg-700 {letter-spacing: 7px;}
+.letter-space-lg-710 {letter-spacing: 7.1px;}
+.letter-space-lg-720 {letter-spacing: 7.2px;}
+.letter-space-lg-730 {letter-spacing: 7.3px;}
+.letter-space-lg-740 {letter-spacing: 7.4px;}
+.letter-space-lg-750 {letter-spacing: 7.5px;}
+.letter-space-lg-760 {letter-spacing: 7.6px;}
+.letter-space-lg-770 {letter-spacing: 7.7px;}
+.letter-space-lg-780 {letter-spacing: 7.8px;}
+.letter-space-lg-790 {letter-spacing: 7.9px;}
+.letter-space-lg-800 {letter-spacing: 8px;}
 /*//////////////////////////////////////////////////////////////////
 [ MARGIN ]*/
 .m-t-lg-0, .m-tb-lg-0, .m-all-lg-0 {margin-top: 0px;}
