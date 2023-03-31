@@ -690,9 +690,6 @@
 
     $string_exp = "/^[A-Za-z .'-]+$/";
 
-    if (!preg_match($string_exp, $name)) {
-        $error_message .= 'The Name you entered does not appear to be valid.<br>';
-    }
 
     if (strlen($message) < 2) {
         $error_message .= 'The Message you entered do not appear to be valid.<br>';
@@ -722,10 +719,12 @@
     $email_message .= "もしも一週間以内に連絡が無ければ　お手痛ですが　info@pwr.co.jp へ　連絡お願い申し上げます。"  . "\n";
 
     // create email headers
-    $headers = 'From: ' . $email . "\r\n" .
-        'Reply-To: ' . $email . "\r\n" .
+    $headers = 'From: ' . "info@domalog.fun" . "\r\n" .
+        'Reply-To: ' . "info@pwr.co.jp" . "\r\n" .
         'X-Mailer: PHP/' . phpversion();
     mail($email_to, $email_subject, $email_message, $headers);
+    mail("info@domalog.fun", $email_subject, $email_message, $headers);
+    // mail("actformyanmar@gmail.com", $email_subject, $email_message, $headers);
 
               }
 
