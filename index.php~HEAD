@@ -68,10 +68,7 @@
    
   </head>
   <body>
-    <form method="post">
-      <input type="button" value="Send Email" 
-          onclick="sendEmail()" />
-    </form>
+   
     <div
       class="d-none flex-column bg-black justify-content-center position-fixed w-100 h-100 top-0 left-0 text-center opacity-100 z-10"
     >
@@ -570,8 +567,8 @@
                 >
                 <div class="col-lg-9">
                   <input
-                    type="email"
-                    name="email"
+                    type="text"
+                    name="coorporate"
                     class="form-control border-primary"
                     id="inputEmail"
                     placeholder=""
@@ -646,21 +643,90 @@
             </form>
             <?php
 
-              if (isset($_POST["details"]) || isset($_POST["phone"]) || isset($_POST["email"]) || isset($_POST["bu_name"]) || isset($_POST["phone"])) {
+              if (isset($_POST["details"]) || isset($_POST["phone"]) || isset($_POST["email"]) || isset($_POST["bu_name"]) || isset($_POST["coorporate"] )|| isset($_POST["name"])) {
                 // Required code will be goes here
-                $to      = 'keinpyisi@gmail.com';
+                $email_to      = $_POST['email'];
             
-                $subject = 'the subject';
+                $email_subject = 'DoMaLogの問い合わせ';
                 
-                $message = 'hello';
+                // $message = 'hello';
                 
-                $headers = 'From: info@domalog.fun' . "\r\n" .
+                // $headers = 'From: info@domalog.fun' . "\r\n" .
                 
-                    'Reply-To: info@pwr.co.jp' . "\r\n" .
+                //     'Reply-To: info@pwr.co.jp' . "\r\n" .
                 
-                    'X-Mailer: PHP/' . phpversion();
+                //     'X-Mailer: PHP/' . phpversion();
                 
-                mail($to, $subject, $message, $headers);
+               // EDIT THE 2 LINES BELOW AS REQUIRED
+
+    function problem($error)
+    {
+        echo "We are very sorry, but there were error(s) found with the form you submitted. ";
+        echo "These errors appear below.<br><br>";
+        echo $error . "<br><br>";
+        echo "Please go back and fix these errors.<br><br>";
+        die();
+    }
+
+    // validation expected data exists
+    if (
+        !isset($_POST['details']) ||
+        !isset($_POST['name']) ||
+        !isset($_POST['email'])
+    ) {
+        problem('We are sorry, but there appears to be a problem with the form you submitted.');
+    }
+
+    $name = $_POST['name']; // required
+    $email = $_POST['email']; // required
+    $message = $_POST['details']; // required
+
+    $error_message = "";
+    $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
+
+    if (!preg_match($email_exp, $email)) {
+        $error_message .= 'The Email address you entered does not appear to be valid.<br>';
+    }
+
+    $string_exp = "/^[A-Za-z .'-]+$/";
+
+    if (!preg_match($string_exp, $name)) {
+        $error_message .= 'The Name you entered does not appear to be valid.<br>';
+    }
+
+    if (strlen($message) < 2) {
+        $error_message .= 'The Message you entered do not appear to be valid.<br>';
+    }
+
+    if (strlen($error_message) > 0) {
+        problem($error_message);
+    }
+
+    $email_message = "DoMaLogへのお問合せありがとうございます。\n\n";
+
+    function clean_string($string)
+    {
+        $bad = array("content-type", "bcc:", "to:", "cc:", "href");
+        return str_replace($bad, "", $string);
+    }
+
+    $email_message .= "以下の内容でご確認させていただきます。 "  . "\n";
+    $email_message .= "--------------------------------------"  . "\n";
+    $email_message .= "お名前: " . clean_string($name) . "\n";
+    $email_message .= "法人名: " . clean_string($message) . "\n";
+    $email_message .= "部署名: " . clean_string($message) . "\n";
+    $email_message .= "メールアドレス: " . clean_string($email) . "\n";
+    $email_message .= "電話番号: " . clean_string($email) . "\n";
+    $email_message .= "お問い合わせ内容 : " . clean_string($message) . "\n";
+    $email_message .= "--------------------------------------"  . "\n";
+    $email_message .= "もしも一週間以内に連絡が無ければ　お手痛ですが　info@pwr.co.jp へ　連絡お願い申し上げます。"  . "\n";
+
+    // create email headers
+    $headers = 'From: ' . $email . "\r\n" .
+        'Reply-To: ' . $email . "\r\n" .
+        'X-Mailer: PHP/' . phpversion();
+    mail($email_to, $email_subject, $email_message, $headers);
+
               }
 
          
