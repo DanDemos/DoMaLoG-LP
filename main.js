@@ -48,7 +48,7 @@ elements.forEach(element => {
 
   new TypeIt(element, {
     strings: abc,
-    speed: 75,
+    speed: 230,
     loop: false,
   }).go();
 });
