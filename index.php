@@ -441,7 +441,7 @@
                     <div
                       class="position-relative d-flex flex-column justify-content-center text-center"
                     >
-                      <div class="d-flex flex-column text-center p-b-160">
+                      <div class="d-flex flex-column text-center p-b-160 m-b-0 m-b-sm-60">
                         <img
                           class="mx-auto"
                           src="images/Group 86.png"
