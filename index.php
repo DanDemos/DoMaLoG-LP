@@ -79,11 +79,28 @@
       <div class="d-flex flex-column align-items-center m-t-30"></div>
     </div>
 
+    <div id="loading-screen" class="z-q9" style="">
+      <div class="container g-5 g-sm-3">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+            <div id="Title-1" class="position-absolute top-50 m-t-70 d-flex flex-column text-start align-content-start">
+              <!-- さあ、<span class="typing-effect">リアルEXPを<br />タメよう。</span> -->
+              <div class=" d-inline-flex justify-content-start text-start">
+                <h1 class="fs-lg-72 fs-32 letter-space-lg-720 letter-space-320 fw-1000 lh-base f-jp text-center" 
+                style="display: inline-table; width: 11em; margin: 0 auto;" >
+                さあ、<span class="typing-effect">リアルEXPを<br />タメよう。</span></h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+		</div>
+
 		<div id="blackscreen" class="" style="display: none;">
 
 		</div>
 
-    <div id="float-menu" class="position-fixed z-q9">
+    <div id="float-menu" class="position-fixed z-q8">
       <div class="position-relative d-flex flex-column align-items-end">
         <button id="menu-btn-open" class="position-absolute floating">
           <img
@@ -303,7 +320,7 @@
             </div>
           </div>
           <div class="col-lg-5 col-md-8 col-12 p-0 d-flex flex-column">
-            <div class="text-center p-t-0 p-r-md-70 p-r-0">
+            <div class="text-center p-t-0 p-r-lg-70 p-r-0">
               <h1 class="fs-24 fs-sm-16 letter-space-160 fw-1000 f-jp">早くいきたければ一人で進め。</h1>
               <h2 class="fs-24 fs-sm-16 letter-space-160 fw-1000 p-t-15 f-jp">
                 遠くまで行きたければ、みんなで進め。

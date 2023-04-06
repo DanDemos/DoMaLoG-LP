@@ -94,6 +94,29 @@ a:hover{
   z-index: 2;
 }
 
+#loading-screen{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw; 
+  height: 100vh; 
+  background-color: #F9F9F9;
+  /* z-index: 3; */
+  -webkit-animation: cssAnimation 6s forwards; 
+  animation: cssAnimation 6s forwards;
+}
+
+@keyframes cssAnimation {
+  0%   {opacity: 1;}
+  90%  {opacity: 1;}
+  100% {opacity: 0;}
+}
+@-webkit-keyframes cssAnimation {
+  0%   {opacity: 1;}
+  90%  {opacity: 1;}
+  100% {opacity: 0;}
+}
+
 .menu {
   display: flex;
   flex-direction: column;
