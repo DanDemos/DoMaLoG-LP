@@ -467,9 +467,19 @@ a:hover{
 }
 
 .android {
-  width: 200px;
+  /* width: 200px; */
+  padding-left: 0;
+  padding-right: 0;
+  width: 106%;
+  height: 106%;
+  object-fit: cover;
 }
 
 .apple {
-  width: 164px;
+  /* width: 164px; */
+  padding-left: 0;
+  padding-right: 0;
+  width: 85%;
+  height: 85%;
+  object-fit: cover;
 }

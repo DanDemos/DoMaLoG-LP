@@ -83,7 +83,7 @@
       <div class="container g-5 g-sm-3">
         <div class="row">
           <div class="col-12 d-flex justify-content-center">
-            <div id="Title-1" class="position-absolute top-50 m-t-70 d-flex flex-column text-start align-content-start">
+            <div id="Title-1" class="position-absolute top-15 m-t-70 d-flex flex-column text-start align-content-start">
               <!-- さあ、<span class="typing-effect">リアルEXPを<br />タメよう。</span> -->
               <div class=" d-inline-flex justify-content-start text-start">
                 <h1 class="fs-lg-72 fs-32 letter-space-lg-720 letter-space-320 fw-1000 lh-base f-jp text-center" 
@@ -94,7 +94,7 @@
           </div>
         </div>
       </div>
-		</div>
+		</div> 
 
 		<div id="blackscreen" class="" style="display: none;">
 
@@ -210,13 +210,13 @@
                         class="container position-absolute bottom-0 start-0 end-0 mx-auto"
                       >
                         <div class="row app-icons m-t-0 m-t-sm-100">
-                          <a class="col-12 col-md-6" href="https://apps.apple.com/app/id1551353775">
+                          <a class="col-12 col-md-6 px-0" href="https://apps.apple.com/app/id1551353775">
                             <img 
                               class="apple"
                               src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1276560000&h=7e7b68fad19738b5649a1bfb78ff46e9" 
                               alt="Download on the App Store">
                           </a>
-                          <a class="col-12 col-md-6" href='https://play.google.com/store/apps/details?id=com.stagescycling.stages'>
+                          <a class="col-12 col-md-6 px-0" href='https://play.google.com/store/apps/details?id=com.stagescycling.stages'>
                             <img 
                               class="android" 
                               alt='Get it on Google Play' 
@@ -478,13 +478,13 @@
                         class="container position-absolute bottom-0 start-0 end-0 mx-auto m-b-50"
                       >
                         <div class="row app-icons m-t-0 m-t-sm-100">
-                          <a class="col-12 col-md-6" href="https://apps.apple.com/app/id1551353775">
+                          <a class="col-12 col-md-6 px-0" href="https://apps.apple.com/app/id1551353775">
                             <img 
                               class="apple"
                               src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1276560000&h=7e7b68fad19738b5649a1bfb78ff46e9" 
                               alt="Download on the App Store">
                           </a>
-                          <a class="col-12 col-md-6" href='https://play.google.com/store/apps/details?id=com.stagescycling.stages'>
+                          <a class="col-12 col-md-6 px-0" href='https://play.google.com/store/apps/details?id=com.stagescycling.stages'>
                             <img 
                               class="android" 
                               alt='Get it on Google Play' 
@@ -632,6 +632,7 @@
                     cols="30"
                     name="details"
                     placeholder=""
+                    style="min-height: 180px;"
                   ></textarea>
                 </div>
               </div>
@@ -766,7 +767,7 @@
           </div>
         </div>
         <div
-          class="text-center fs-16 fw-1000 m-t-100 mb-3 letter-space-160"
+          class="text-center fs-16 fw-1000 m-t-100 m-b-32 letter-space-160"
         >
           Copyright ©2023 PwR
         </div>
