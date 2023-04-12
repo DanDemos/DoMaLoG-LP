@@ -86,7 +86,7 @@
             <div id="Title-1" class="position-absolute top-15 m-t-70 d-flex flex-column text-start align-content-start">
               <!-- さあ、<span class="typing-effect">リアルEXPを<br />タメよう。</span> -->
               <div class=" d-inline-flex justify-content-start text-start">
-                <h1 class="fs-lg-72 fs-32 letter-space-lg-720 letter-space-320 fw-1000 lh-base f-jp text-center" 
+                <h1 class="fs-lg-72 fs-32 letter-space-lg-720 letter-space-320 fw-1000 lh-15 f-jp text-start" 
                 style="display: inline-table; width: 11em; margin: 0 auto;" >
                 さあ、<span class="typing-effect">リアルEXPを<br />タメよう。</span></h1>
               </div>
@@ -142,7 +142,7 @@
               class="mt-3 cl-white cl-hover-white hover-italic"
               >Content</a
             >
-            <div class="d-flex justify-content-between w-100 m-t-35 mb-3">
+            <div class="d-flex justify-content-between w-100 m-t-35 m-b-4">
               <div>
                 <button href="" class="cl-white">
                   <i class="fab fa-twitter fs-24 hover-large"></i>
@@ -159,22 +159,21 @@
       </div>
     </div>
 
-    <section id="session1" class="p-b-80" 
-    style="background: url('images/mv-bg2.png');  background-repeat: no-repeat; background-position: center;">
+    <section id="session1" class="p-b-80" >
       <div class="container g-5 g-sm-3">
         <div class="row">
           <div class="col-12">
-            <div id="Title-1" class="m-t-70 d-flex flex-column text-start align-content-start">
+            <div id="Title-1" class="m-t-100 m-t-md-70 m-t-lg-70 d-flex flex-column text-start align-content-start">
               <!-- さあ、<span class="typing-effect">リアルEXPを<br />タメよう。</span> -->
-              <div class=" d-inline-flex justify-content-start text-start">
-                <h1 class="fs-lg-72 fs-32 letter-space-lg-720 letter-space-320 fw-1000 lh-base f-jp" 
+              <div class=" d-inline-flex justify-content-start text-center">
+                <h1 class="fs-lg-72 fs-32 letter-space-lg-720 letter-space-320 fw-1000 lh-15 lh-sm-17 f-jp" 
                 style="display: inline-table; width: 11em; margin: 0 auto;" >
                 さあ、<span class="typing-effect">リアルEXPを<br />タメよう。</span></h1>
               </div>
             </div>
 
             <div id="Para-1" class="mt-4 text-center">
-              <p class="fs-16 letter-space-160 lh-base fw-1000 f-jp">
+              <p class="fs-16 letter-space-160 lh-20 fw-1000 f-jp">
                 「メモをとる」からはじまる、オンラインP2Pラーニングアプリ。<br
                   class="show-on-desktop"
                 />
@@ -534,7 +533,7 @@
             </button>
           </div>
 
-          <div class="text-center m-t-125 m-t-sm-70 m-t-md-70 m-t-lg-70">
+          <div class="text-center m-t-125 m-t-sm-70 m-t-md-70 m-t-lg-125">
             <h2 class="fs-14 letter-space-140 fw-1000 f-jp">
               フォームからのお問い合わせを<br class="show-on-phone" /><br
                 class="show-on-phone"
@@ -552,7 +551,7 @@
           <div class="container d-flex justify-content-center m-t-38">
             <form method="post" action="index.php" class="col-lg-7 fs-16">
               <div class="row mb-3">
-                <label for="inputName" class="col-lg-3 col-form-label fs-16 letter-space-160 fw-1000"
+                <label for="inputName" class="col-lg-3 col-form-label fs-16 letter-space-200 fw-1000"
                   >お名前 <span class="cl-primary">※</span></label
                 >
                 <div class="col-lg-9">
@@ -566,7 +565,7 @@
                 </div>
               </div>
               <div class="row mb-3">
-                <label for="inputEmail" class="col-lg-3 col-form-label fs-16 letter-space-160 fw-1000"
+                <label for="inputEmail" class="col-lg-3 col-form-label fs-16 letter-space-200 fw-1000"
                   >法人名</label
                 >
                 <div class="col-lg-9">
@@ -580,7 +579,7 @@
                 </div>
               </div>
               <div class="row mb-3">
-                <label for="inputPassword" class="col-lg-3 col-form-label fs-16 letter-space-160 fw-1000"
+                <label for="inputPassword" class="col-lg-3 col-form-label fs-16 letter-space-200 fw-1000"
                   >部署名</label
                 >
                 <div class="col-lg-9">
@@ -608,7 +607,7 @@
                 </div>
               </div>
               <div class="row mb-3">
-                <label for="inputPassword" class="col-lg-3 col-form-label fs-16 letter-space-160 fw-1000"
+                <label for="inputPassword" class="col-lg-3 col-form-label fs-16 letter-space-200 fw-1000"
                   >電話番号</label
                 >
                 <div class="col-lg-9">
@@ -622,7 +621,7 @@
                 </div>
               </div>
               <div class="row mb-3">
-                <label for="inputPassword" class="col-lg-3 col-form-label fs-16 letter-space-160 fw-1000"
+                <label for="inputPassword" class="col-lg-3 col-form-label fs-16 letter-space-200 fw-1000"
                   >お問い合わせ内容 <span class="cl-primary">※</span></label
                 >
                 <div class="col-lg-9">

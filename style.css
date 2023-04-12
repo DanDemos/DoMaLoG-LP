@@ -84,6 +84,18 @@ a:hover{
   }
 }
 
+#session1{
+  background: url('images/mv-bg2.png');  
+  background-repeat: no-repeat; 
+  background-position: center;
+}
+
+@media (max-width: 576px) {
+  #session1{
+    background-position: left;
+  }
+}
+
 #blackscreen{
   position: fixed;
   top: 0;
@@ -437,7 +449,7 @@ a:hover{
 
 @media screen and (min-width: 0px) and (max-width: 575px){
   #float-menu{
-    bottom: 80%; 
+    bottom: 97%; 
     right: 2%;
   }
 }
@@ -467,7 +479,7 @@ a:hover{
 }
 
 .android {
-  /* width: 200px; */
+  max-width: 200px;
   padding-left: 0;
   padding-right: 0;
   width: 106%;
@@ -476,10 +488,25 @@ a:hover{
 }
 
 .apple {
-  /* width: 164px; */
+  /* max-width: 173px; */
+
+  /* original */
+  max-width: 164px;
+
   padding-left: 0;
   padding-right: 0;
   width: 85%;
   height: 85%;
   object-fit: cover;
+}
+
+.ti-cursor{
+  font-size: 72px;
+}
+
+@media (max-width: 576px) {
+  .ti-cursor{
+    font-size: 32px!important;
+    line-height: 1.5!important;
+  }
 }
