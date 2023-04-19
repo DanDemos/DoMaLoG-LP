@@ -159,14 +159,14 @@
       </div>
     </div>
 
-    <section id="session1" class="p-b-80" >
+    <section id="session1" class="p-b-0 p-b-lg-60" >
       <div class="container g-5 g-sm-3">
         <div class="row">
           <div class="col-12">
-            <div id="Title-1" class="m-t-100 m-t-md-70 m-t-lg-70 d-flex flex-column text-start align-content-start">
+            <div id="Title-1" class="m-t-60 m-t-md-70 m-t-lg-70 d-flex flex-column text-start align-content-start">
               <!-- さあ、<span class="typing-effect">リアルEXPを<br />タメよう。</span> -->
               <div class=" d-inline-flex justify-content-start text-center">
-                <h1 class="fs-lg-72 fs-32 letter-space-lg-720 letter-space-320 fw-1000 lh-15 lh-sm-17 f-jp" 
+                <h1 class="fs-lg-72 fs-32 letter-space-lg-720 letter-space-md-320 fw-1000 lh-15 lh-sm-17 f-jp" 
                 style="display: inline-table; width: 11em; margin: 0 auto;" >
                 さあ、<span class="typing-effect">リアルEXPを<br />タメよう。</span></h1>
               </div>
@@ -408,7 +408,7 @@
       </div>
     </section>
 
-    <section id="信頼できる仲間とつながろう " class="container g-0 m-t-80">
+    <section id="信頼できる仲間とつながろう " class="container g-0">
       <div class="row align-items-end g-0 position-relative">
         <div class="col-md-5 order-md-last text-lg-end text-center my-md-auto my-0">
           <div class="img-layer-border-3-parent">
@@ -437,7 +437,7 @@
       </div>
     </section>
 
-    <section class="m-t-60 m-t-lg-150 p-b-120 position-relative">
+    <section class="m-t-60 m-t-lg-60 p-b-120 position-relative">
       <div class="container g-5 g-sm-3">
         <div class="row">
           <div class="col-12 text-center">
@@ -514,7 +514,7 @@
       />
     </section>
 
-    <section id="session4" class="m-t-200 m-t-sm-0 bg-white p-b-90">
+    <section id="session4" class=" m-t-sm-0 bg-white p-b-90">
       <div class="container g-5 g-sm-3">
         <div class="row">
           <div class="text-center m-t-75">
@@ -766,7 +766,7 @@
           </div>
         </div>
         <div
-          class="text-center fs-16 fw-1000 m-t-100 m-b-32 letter-space-160"
+          class="text-center fs-16 fw-1000 m-t-100 p-b-16 letter-space-160"
         >
           Copyright ©2023 PwR
         </div>
@@ -789,3 +789,14 @@
   </body>
   
 </html>
+
+<!-- <script>
+  (function(d) {
+    var config = {
+      kitId: 'vss3tmk',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script> -->
