@@ -363,7 +363,7 @@
 
         <div class="col-md-7">
           <div
-            class="card-1 px-lg-5 px-4 p-t-75 p-b-75 position-relative zm-1 bg-white"
+            class="card-1 px-lg-5 px-4 p-t-75 p-b-75 position-relative zm-2 bg-white"
           >
             <h1 class="fs-24 fs-sm-20 letter-space-240 letter-space-sm-200 fw-700 f-jp">体験はsaveできる</h1>
             <h2 class="fs-16 letter-space-160 m-t-30 lh-18 fw-700 f-jp">
@@ -421,7 +421,7 @@
         </div>
         <div class="col-md-7">
           <div
-            class="card-3 p-lr-40 p-t-75 p-b-75 position-relative zm-1 bg-white"
+            class="card-3 p-lr-40 p-t-75 p-b-75 position-relative zm-2 bg-white"
           >
             <h1 class="fs-24 letter-space-240 fw-700 f-jp">信頼できる仲間とつながろう</h1>
             <h2 class="fs-16 letter-space-160 m-t-30 lh-18 fw-700 f-jp">
