@@ -86,7 +86,7 @@
             <div id="Title-1" class="position-absolute top-15 m-t-70 d-flex flex-column text-start align-content-start">
               <!-- さあ、<span class="typing-effect">リアルEXPを<br />タメよう。</span> -->
               <div class=" d-inline-flex justify-content-start text-start">
-                <h1 class="fs-lg-72 fs-32 letter-space-lg-720 letter-space-320 fw-1000 lh-15 f-jp text-start" 
+                <h1 class="fs-lg-72 fs-32 letter-space-lg-720 letter-space-320 fw-900 lh-15 f-jp text-start" 
                 style="display: inline-table; width: 11em; margin: 0 auto;" >
                 さあ、<span class="typing-effect">リアルEXPを<br />タメよう。</span></h1>
               </div>
@@ -113,7 +113,7 @@
         </button>
         <div class="position-absolute z-10" style="display: none">
           <div
-            class="d-flex flex-column bg-primary cl-white rounded-4 fs-21 fw-1000 text-end w-100 p-4"
+            class="d-flex flex-column bg-primary cl-white rounded-4 fs-21 fw-900 text-end w-100 p-4"
           >
             <button
               id="menu-btn-close"
@@ -166,14 +166,14 @@
             <div id="Title-1" class="m-t-60 m-t-md-70 m-t-lg-70 d-flex flex-column text-start align-content-start">
               <!-- さあ、<span class="typing-effect">リアルEXPを<br />タメよう。</span> -->
               <div class=" d-inline-flex justify-content-start text-center">
-                <h1 class="fs-lg-72 fs-32 letter-space-lg-720 letter-space-md-320 fw-1000 lh-15 lh-sm-17 f-jp" 
+                <h1 class="fs-lg-72 fs-32 letter-space-lg-720 letter-space-md-320 fw-900 lh-15 lh-sm-17 f-jp" 
                 style="display: inline-table; width: 11em; margin: 0 auto;" >
                 さあ、<span class="typing-effect">リアルEXPを<br />タメよう。</span></h1>
               </div>
             </div>
 
             <div id="Para-1" class="mt-4 text-center">
-              <p class="fs-16 letter-space-160 lh-20 fw-1000 f-jp">
+              <p class="fs-16 letter-space-160 lh-20 fw-700 f-jp">
                 「メモをとる」からはじまる、オンラインP2Pラーニングアプリ。<br
                   class="show-on-desktop"
                 />
@@ -259,7 +259,7 @@
               src="images/Grey Rectangle.png"
               alt="Mobile Home Page"
             />
-            <h1 class="text-over-image fs-70 f-jp">動&nbsp&nbsp画</h1>
+            <h1 class="text-over-image fw-700 fs-70 f-jp">動&nbsp&nbsp画</h1>
           </div>
         </div>
       </div>
@@ -275,17 +275,17 @@
               height="38px"
               alt="spin"
             />
-            <h1 class="fs-40 fs-sm-32 fw-1000 m-t-13 f-en">About DoMaLoG</h1>
+            <h1 class="fs-40 fs-sm-32 fw-700 m-t-13 f-en">About DoMaLoG</h1>
           </div>
 
           <div class="text-center m-t-100 m-t-sm-50">
-            <h1 class="fs-lg-72 fs-md-24 fs-sm-24 letter-space-lg-720 letter-space-md-240 letter-space-sm-240 fw-1000 f-jp">
+            <h1 class="fs-lg-72 fs-md-24 fs-sm-24 letter-space-lg-720 letter-space-md-240 letter-space-sm-240 fw-900 f-jp">
               蓄積を叡智に変える、<br />
               生涯のパートナー。
             </h1>
           </div>
 
-          <p class="text-center m-t-70 fs-16 letter-space-160 fw-1000 lh-18 f-jp">
+          <p class="text-center m-t-70 fs-16 letter-space-160 fw-700 lh-18 f-jp">
             ドマログは、体験を価値に変えて、殻を<br class="show-on-phone" />破り潜在能力を引き出すのに最適です。<br /><br
               class="show-on-phone"
             />
@@ -320,8 +320,8 @@
           </div>
           <div class="col-lg-5 col-md-8 col-12 p-0 d-flex flex-column">
             <div class="text-center p-t-0 p-r-lg-70 p-r-0">
-              <h1 class="fs-24 fs-sm-16 letter-space-160 fw-1000 f-jp">早くいきたければ一人で進め。</h1>
-              <h2 class="fs-24 fs-sm-16 letter-space-160 fw-1000 p-t-15 f-jp">
+              <h1 class="fs-24 fs-sm-16 letter-space-160 fw-700 f-jp">早くいきたければ一人で進め。</h1>
+              <h2 class="fs-24 fs-sm-16 letter-space-160 fw-700 p-t-15 f-jp">
                 遠くまで行きたければ、みんなで進め。
               </h2>
             </div>
@@ -342,9 +342,9 @@
                 height="38px"
                 alt=""
               />
-              <h1 class="fs-40 fw-1000 f-en">Feature</h1>
+              <h1 class="fs-40 fw-700 f-en">Feature</h1>
             </div>
-            <h1 class="fs-64 fs-sm-24 fs-md-40 letter-space-640 letter-space-sm-240 letter-space-md-400 text-center text-md-start fw-1000 m-t-50 f-jp">
+            <h1 class="fs-64 fs-sm-24 fs-md-40 letter-space-640 letter-space-sm-240 letter-space-md-400 text-center text-md-start fw-900 m-t-50 f-jp">
               仲間と一緒に進もう。
             </h1>
           </div>
@@ -365,12 +365,12 @@
           <div
             class="card-1 px-lg-5 px-4 p-t-75 p-b-75 position-relative zm-1 bg-white"
           >
-            <h1 class="fs-24 fs-sm-20 letter-space-240 letter-space-sm-200 fw-1000 f-jp">体験はsaveできる</h1>
-            <h2 class="fs-16 letter-space-160 m-t-30 lh-18 fw-1000 f-jp">
+            <h1 class="fs-24 fs-sm-20 letter-space-240 letter-space-sm-200 fw-700 f-jp">体験はsaveできる</h1>
+            <h2 class="fs-16 letter-space-160 m-t-30 lh-18 fw-700 f-jp">
               「メモをとる」というちょっとしたことからはじめよう。たかがメモと思うかもしれない。しかし、メモをとることで上達することを知っている人たちはその小さくて大きな行動をしている。君に必要なのはたった10秒。さあ、体験を価値に変えよう。
             </h2>
             <div class="d-flex align-items-center m-t-30">
-              <h3 class="cl-secondary fs-16 letter-space-160 fw-1000 f-jp">機能：</h3>
+              <h3 class="cl-secondary fs-16 letter-space-160 fw-700 f-jp">機能：</h3>
               <button class="tertiary-button fs-16 letter-space-160 ms-2 f-en">MEMO</button>
             </div>
           </div>
@@ -394,12 +394,12 @@
           <div
             class="card-2 p-lr-25 p-l-lg-90 p-t-77 p-b-75 position-relative zm-2 bg-white"
           >
-            <h1 class="fs-24 letter-space-240 fw-1000 f-jp">体験を共有しよう</h1>
-            <h2 class="fs-16 letter-space-160 m-t-33 lh-18 fw-1000 f-jp">
+            <h1 class="fs-24 letter-space-240 fw-700 f-jp">体験を共有しよう</h1>
+            <h2 class="fs-16 letter-space-160 m-t-33 lh-18 fw-700 f-jp">
               どのようにメモを取ればよいのか、その内容は相応しいのか。これを解決するために「仲間と共有する」という手がある。自分だけで考えるのではなく、多くのプレイヤーの経験を反映する。それは世界中のプレイヤーが自分のコーチになるとも言える。
             </h2>
             <div class="d-flex align-items-center mt-lg-0 mt-3">
-              <h3 class="cl-secondary fs-16 letter-space-160 fw-1000 f-jp">機能：</h3>
+              <h3 class="cl-secondary fs-16 letter-space-160 fw-700 f-jp">機能：</h3>
               <button class="tertiary-button fs-16 letter-space-160 ms-2 f-en">NOTE</button>
               <button class="tertiary-button fs-16 letter-space-160 ms-3 f-en">FORUM</button>
             </div>
@@ -423,12 +423,12 @@
           <div
             class="card-3 p-lr-40 p-t-75 p-b-75 position-relative zm-1 bg-white"
           >
-            <h1 class="fs-24 letter-space-240 fw-1000 f-jp">信頼できる仲間とつながろう</h1>
-            <h2 class="fs-16 letter-space-160 m-t-30 lh-18 fw-1000 f-jp">
+            <h1 class="fs-24 letter-space-240 fw-700 f-jp">信頼できる仲間とつながろう</h1>
+            <h2 class="fs-16 letter-space-160 m-t-30 lh-18 fw-700 f-jp">
               簡単に仲間の取り組み方がみえる。今の君に必要なことを的確にアドバイスできるエキスパートがいる。悩みをシェアしてみよう。一方で君の経験を必要としている仲間がいる。知恵を伝えよう。近いレベルでプレーできる仲間が増えた方がもっとワクワクできる。
             </h2>
             <div class="d-flex align-items-center m-t-30">
-              <h3 class="cl-secondary fs-16 letter-space-160 fw-1000 f-jp">機能：</h3>
+              <h3 class="cl-secondary fs-16 letter-space-160 fw-700 f-jp">機能：</h3>
               <button class="tertiary-button fs-16 letter-space-160 ms-2 f-en">FORUM</button>
               <button class="tertiary-button fs-16 letter-space-160 ms-3 f-en">EVENT</button>
             </div>
@@ -442,7 +442,7 @@
         <div class="row">
           <div class="col-12 text-center">
             <div id="Title-1" class="m-t-70">
-              <h1 class="fs-48 fs-sm-20 letter-space-480 letter-space-200 lh-base fw-1000 f-jp">
+              <h1 class="fs-48 fs-sm-20 letter-space-480 letter-space-200 lh-base fw-900 f-jp">
                 人生に刺激とワクワクをあたえる<br />
                 一歩をふみ出そう。
               </h1>
@@ -524,8 +524,8 @@
               height="38px"
               alt="spin"
             />
-            <h1 class="fs-40 fw-1000 m-t-13">Contact</h1>
-            <h2 class="fs-24 fs-sm-18 m-t-60 letter-space-240 letter-space-sm-180 fw-1000 m-t-sm-30 lh-18 f-jp">
+            <h1 class="fs-40 fw-700 m-t-13">Contact</h1>
+            <h2 class="fs-24 fs-sm-18 m-t-60 letter-space-240 letter-space-sm-180 fw-700 m-t-sm-30 lh-18 f-jp">
               お問い合わせは<br class="show-on-phone" />Discordチャンネルから。
             </h2>
             <button class="secondary-button mx-auto m-t-40 f-jp">
@@ -534,7 +534,7 @@
           </div>
 
           <div class="text-center m-t-125 m-t-sm-70 m-t-md-70 m-t-lg-125">
-            <h2 class="fs-14 letter-space-140 fw-1000 f-jp">
+            <h2 class="fs-14 letter-space-140 fw-700 f-jp">
               フォームからのお問い合わせを<br class="show-on-phone" /><br
                 class="show-on-phone"
               />ご希望の方はこちら
@@ -551,7 +551,7 @@
           <div class="container d-flex justify-content-center m-t-38">
             <form method="post" action="index.php" class="col-lg-7 fs-16">
               <div class="row mb-3">
-                <label for="inputName" class="col-lg-3 col-form-label fs-16 letter-space-200 fw-1000"
+                <label for="inputName" class="col-lg-3 col-form-label fs-16 letter-space-200 fw-700"
                   >お名前 <span class="cl-primary">※</span></label
                 >
                 <div class="col-lg-9">
@@ -565,7 +565,7 @@
                 </div>
               </div>
               <div class="row mb-3">
-                <label for="inputEmail" class="col-lg-3 col-form-label fs-16 letter-space-200 fw-1000"
+                <label for="inputEmail" class="col-lg-3 col-form-label fs-16 letter-space-200 fw-700"
                   >法人名</label
                 >
                 <div class="col-lg-9">
@@ -579,7 +579,7 @@
                 </div>
               </div>
               <div class="row mb-3">
-                <label for="inputPassword" class="col-lg-3 col-form-label fs-16 letter-space-200 fw-1000"
+                <label for="inputPassword" class="col-lg-3 col-form-label fs-16 letter-space-200 fw-700"
                   >部署名</label
                 >
                 <div class="col-lg-9">
@@ -593,7 +593,7 @@
                 </div>
               </div>
               <div class="row mb-3">
-                <label for="inputPassword" class="col-lg-3 col-form-label fs-16 letter-space-160 fw-1000"
+                <label for="inputPassword" class="col-lg-3 col-form-label fs-16 letter-space-160 fw-700"
                   >メールアドレス <span class="cl-primary">※</span></label
                 >
                 <div class="col-lg-9">
@@ -607,7 +607,7 @@
                 </div>
               </div>
               <div class="row mb-3">
-                <label for="inputPassword" class="col-lg-3 col-form-label fs-16 letter-space-200 fw-1000"
+                <label for="inputPassword" class="col-lg-3 col-form-label fs-16 letter-space-200 fw-700"
                   >電話番号</label
                 >
                 <div class="col-lg-9">
@@ -621,7 +621,7 @@
                 </div>
               </div>
               <div class="row mb-3">
-                <label for="inputPassword" class="col-lg-3 col-form-label fs-16 letter-space-200 fw-1000"
+                <label for="inputPassword" class="col-lg-3 col-form-label fs-16 letter-space-200 fw-700"
                   >お問い合わせ内容 <span class="cl-primary">※</span></label
                 >
                 <div class="col-lg-9">
@@ -766,7 +766,7 @@
           </div>
         </div>
         <div
-          class="text-center fs-16 fw-1000 m-t-100 p-b-16 letter-space-160"
+          class="text-center fs-16 fw-700 m-t-100 p-b-16 letter-space-160"
         >
           Copyright ©2023 PwR
         </div>
@@ -790,7 +790,7 @@
   
 </html>
 
-<!-- <script>
+<script>
   (function(d) {
     var config = {
       kitId: 'vss3tmk',
@@ -799,4 +799,4 @@
     },
     h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
   })(document);
-</script> -->
+</script>
