@@ -119,14 +119,14 @@ a:hover{
 }
 
 @keyframes cssAnimation {
-  0%   {opacity: 1;}
-  90%  {opacity: 1;}
-  100% {opacity: 0;}
+  0%   {visibility: visible;}
+  90%  {visibility: visible;}
+  100% {visibility: hidden;}
 }
 @-webkit-keyframes cssAnimation {
-  0%   {opacity: 1;}
-  90%  {opacity: 1;}
-  100% {opacity: 0;}
+  0%   {visibility: visible;}
+  90%  {visibility: visible;}
+  100% {visibility: hidden;}
 }
 
 .menu {
