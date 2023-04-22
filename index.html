@@ -336,7 +336,7 @@
           <div class="col-11">
             <div class="d-flex justify-content-md-start justify-content-center">
               <img
-                class="my-auto me-4 show-on-desktop"
+                class="my-auto me-4"
                 src="images/Group 213.png"
                 width="38px"
                 height="38px"
