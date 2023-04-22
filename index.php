@@ -718,8 +718,9 @@
         $bad = array("content-type", "bcc:", "to:", "cc:", "href");
         return str_replace($bad, "", $string);
     }
-    $email_message .= "※自動通知メールのため、当メールアドレスへの返信はできません。\n返信をご希望の場合は、「info@pwr.co.jp」までご連絡をお願いいたします。　"  . "\n";
-    $email_message .= "この度は、DoMaLoGへのお問い合わせありがとうございます。　"  . "\n";
+    $email_message .= "この度は、DoMaLoGへのお問い合わせありがとうございます。　"  . "\n\n";
+    $email_message .= "なお、自動通知メールのため、当メールアドレスへの返信はできません\n返信をご希望の場合は「info@pwr.co.jp」までご連絡をお願いいたします。"  . "\n\n";
+   
     $email_message .= "以下の内容でご確認させていただきます。 "  . "\n";
     $email_message .= "--------------------------------------"  . "\n";
     $email_message .= "お名前: " . clean_string($name) . "\n";
@@ -728,8 +729,8 @@
     $email_message .= "メールアドレス: " . clean_string($email) . "\n";
     $email_message .= "電話番号: " . clean_string($phone) . "\n";
     $email_message .= "お問い合わせ内容 : " . clean_string($message) . "\n";
-    $email_message .= "--------------------------------------"  . "\n";
-    $email_message .= "一週間以内に弊社より返信がなければ、お手数ですが info@pwr.co.jp までお問い合わせください。"  . "\n";
+    $email_message .= "--------------------------------------"  . "\n\n";
+    $email_message .= "弊社より一週間以内に返信がなければ、お手数ですが「info@pwr.co.jp」までお問い合わせください。"  . "\n";
 
     // create email headers
     $headers = 'From: ' . "info@domalog.fun" . "\r\n" .
