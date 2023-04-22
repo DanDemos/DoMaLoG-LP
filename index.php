@@ -665,10 +665,11 @@
 
     function problem($error)
     {
-        $error="We are very sorry, but there were error(s) found with the form you submitted.  ¥n These errors appear below.<br><br> ".$error." <br><br> Please go back and fix these errors.<br><br>";
-        
+        $error="We are very sorry, but there were error(s) found with the form you submitted.  \\nThese errors appear below.\\n\\n ".$error." \\nPlease go back and fix these errors.\\n\\n";
+       // $error="We are very sorry, but there were error(s) found with the form you submitted.  \n\n These errors appear below.\n\n ".$error." \n\n Please go back and fix these errors.\n\n";
+  
         echo '<script language="javascript" type="text/JavaScript"> 
-        alert('.$error.');
+        alert("'.$error.'");
         window.location.href = "/";
         </script>';
       
@@ -693,14 +694,14 @@
     $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
 
     if (!preg_match($email_exp, $email)) {
-        $error_message .= 'The Email address you entered does not appear to be valid.<br>';
+        $error_message .='-The Email address you entered does not appear to be valid.\\n';
     }
 
     $string_exp = "/^[A-Za-z .'-]+$/";
 
 
     if (strlen($message) < 2) {
-        $error_message .= 'The Message you entered do not appear to be valid.<br>';
+        $error_message .=' -The Message you entered do not appear to be valid.\\n';
     }
 
     if (strlen($error_message) > 0) {
