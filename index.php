@@ -711,15 +711,15 @@
         problem($error_message);
     }
 
-    $email_message = "DoMaLoGへのお問い合わせありがとうございます。\n\n";
+    $email_message = "この度は、DoMaLoGへのお問い合わせありがとうございます。　\n\n";
 
     function clean_string($string)
     {
         $bad = array("content-type", "bcc:", "to:", "cc:", "href");
         return str_replace($bad, "", $string);
     }
-    $email_message .= "この度は、DoMaLoGへのお問い合わせありがとうございます。　"  . "\n\n";
-    $email_message .= "なお、自動通知メールのため、当メールアドレスへの返信はできません\n返信をご希望の場合は「info@pwr.co.jp」までご連絡をお願いいたします。"  . "\n\n";
+   
+    $email_message .= "なお、自動通知メールのため、当メールアドレスへの返信はできません。　\n返信をご希望の場合は「info@pwr.co.jp」までご連絡をお願いいたします。"  . "\n\n";
    
     $email_message .= "以下の内容でご確認させていただきます。 "  . "\n";
     $email_message .= "--------------------------------------"  . "\n";
