@@ -665,10 +665,13 @@
 
     function problem($error)
     {
-        echo "We are very sorry, but there were error(s) found with the form you submitted. ";
-        echo "These errors appear below.<br><br>";
-        echo $error . "<br><br>";
-        echo "Please go back and fix these errors.<br><br>";
+        $error="We are very sorry, but there were error(s) found with the form you submitted.  ¥n These errors appear below.<br><br> ".$error." <br><br> Please go back and fix these errors.<br><br>";
+        
+        echo '<script language="javascript" type="text/JavaScript"> 
+        alert('.$error.');
+        window.location.href = "/";
+        </script>';
+      
         die();
     }
 
