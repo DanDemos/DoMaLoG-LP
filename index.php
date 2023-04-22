@@ -684,6 +684,7 @@
     $name = $_POST['name']; // required
     $email = $_POST['email']; // required
     $message = $_POST['details']; // required
+    $phone=$_POST["phone"];
 
     $error_message = "";
     $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
@@ -703,7 +704,7 @@
         problem($error_message);
     }
 
-    $email_message = "DoMaLogへのお問合せありがとうございます。\n\n";
+    $email_message = "DoMaLoGへのお問い合わせありがとうございます。\n\n";
 
     function clean_string($string)
     {
@@ -717,10 +718,10 @@
     $email_message .= "法人名: " . clean_string($message) . "\n";
     $email_message .= "部署名: " . clean_string($message) . "\n";
     $email_message .= "メールアドレス: " . clean_string($email) . "\n";
-    $email_message .= "電話番号: " . clean_string($email) . "\n";
+    $email_message .= "電話番号: " . clean_string($phone) . "\n";
     $email_message .= "お問い合わせ内容 : " . clean_string($message) . "\n";
     $email_message .= "--------------------------------------"  . "\n";
-    $email_message .= "もしも一週間以内に連絡が無ければ　お手痛ですが　info@pwr.co.jp へ　連絡お願い申し上げます。"  . "\n";
+    $email_message .= "一週間以内に弊社より返信がなければ、お手数ですが info@pwr.co.jp までお問い合わせください。"  . "\n";
 
     // create email headers
     $headers = 'From: ' . "info@domalog.fun" . "\r\n" .
@@ -729,6 +730,8 @@
     mail($email_to, $email_subject, $email_message, $headers);
     mail("info@domalog.fun", $email_subject, $email_message, $headers);
     // mail("actformyanmar@gmail.com", $email_subject, $email_message, $headers);
+    header("Location: https://domalog.fun/");
+    die();
 
               }
 
