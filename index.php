@@ -86,7 +86,7 @@
             <div id="Title-1" class="position-absolute top-15 m-t-70 d-flex flex-column text-start align-content-start">
               <!-- さあ、<span class="typing-effect">リアルEXPを<br />タメよう。</span> -->
               <div class=" d-inline-flex justify-content-start text-start">
-                <h1 class="fs-lg-72 fs-32 letter-space-lg-720 letter-space-320 fw-900 lh-15 f-jp text-start" 
+                <h1 class="fs-lg-72 fs-32 letter-space-lg-720 letter-space-320 fw-900 lh-15 f-jp text-center" 
                 style="display: inline-table; width: 11em; margin: 0 auto;" >
                 さあ、<span class="typing-effect">リアルEXPを<br />タメよう。</span></h1>
               </div>
@@ -398,7 +398,7 @@
             <h2 class="fs-16 letter-space-160 m-t-33 lh-18 fw-700 f-jp">
               どのようにメモを取ればよいのか、その内容は相応しいのか。これを解決するために「仲間と共有する」という手がある。自分だけで考えるのではなく、多くのプレイヤーの経験を反映する。それは世界中のプレイヤーが自分のコーチになるとも言える。
             </h2>
-            <div class="d-flex align-items-center mt-lg-0 mt-3">
+            <div class="d-flex align-items-center mt-lg-30 m-t-34">
               <h3 class="cl-secondary fs-16 letter-space-160 fw-700 f-jp">機能：</h3>
               <button class="tertiary-button fs-16 letter-space-160 ms-2 f-en">NOTE</button>
               <button class="tertiary-button fs-16 letter-space-160 ms-3 f-en">FORUM</button>
