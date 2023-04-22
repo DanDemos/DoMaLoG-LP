@@ -730,19 +730,18 @@
     mail($email_to, $email_subject, $email_message, $headers);
     $mail_status = mail("info@domalog.fun", $email_subject, $email_message, $headers);
     // mail("actformyanmar@gmail.com", $email_subject, $email_message, $headers);
-    if ($mail_status) { ?>
-      <script language="javascript" type="text/javascript">
-       alert('Thank you for the message. We will contact you shortly.');
-       window.location.href = '/';
-      </script>
-      <?php
-      }else { ?>
-       <script language="javascript" type="text/javascript">
-        alert('Message failed. Please, send an email to gordon@template-help.com');
-        window.location.href = '/';
-       </script>
-      <?php } ?>
     
+    if ($mail_status){
+      echo '<script language="javascript" type="text/JavaScript"> 
+      alert("Thank you for the message. We will contact you shortly.");
+      window.location.href = "/";
+      </script>';
+    }else{
+      echo '<script language="javascript" type="text/JavaScript"> 
+      alert("Message failed. Please, send an email to info@pwr.co.jp");
+      window.location.href = "/";
+      </script>';
+    } 
 
               }
 
