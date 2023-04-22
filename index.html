@@ -408,7 +408,7 @@
       </div>
     </section>
 
-    <section id="信頼できる仲間とつながろう " class="container g-0">
+    <section id="信頼できる仲間とつながろう " class="container g-0 m-t-100 m-t-lg-175">
       <div class="row align-items-end g-0 position-relative">
         <div class="col-md-5 order-md-last text-lg-end text-center my-md-auto my-0">
           <div class="img-layer-border-3-parent">
