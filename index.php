@@ -549,12 +549,7 @@
           </div>
 
           <div class="container d-flex justify-content-center m-t-38">
-          <?php
-            $rand=rand();
-            $_SESSION['rand']=$rand;
-          ?>
             <form method="post" action="index.php" class="col-lg-7 fs-16">
-              <input type="hidden" value="<?php echo $rand; ?>" name="randcheck" />
               <div class="row mb-3">
                 <label for="inputName" class="col-lg-3 col-form-label fs-16 letter-space-200 fw-700"
                   >お名前 <span class="cl-primary">※</span></label
@@ -652,7 +647,7 @@
             </form>
             <?php
 
-              if (isset($_POST["details"]) || isset($_POST["phone"]) || isset($_POST["email"]) || isset($_POST["bu_name"]) || isset($_POST["coorporate"] )|| isset($_POST["name"]) && $_POST['randcheck']==$_SESSION['rand']) {
+              if (isset($_POST["details"]) || isset($_POST["phone"]) || isset($_POST["email"]) || isset($_POST["bu_name"]) || isset($_POST["coorporate"] )|| isset($_POST["name"])) {
                 // Required code will be goes here
                 $email_to      = $_POST['email'];
             
@@ -733,8 +728,20 @@
         'Reply-To: ' . "info@pwr.co.jp" . "\r\n" .
         'X-Mailer: PHP/' . phpversion();
     mail($email_to, $email_subject, $email_message, $headers);
-    mail("info@domalog.fun", $email_subject, $email_message, $headers);
+    $mail_status = mail("info@domalog.fun", $email_subject, $email_message, $headers);
     // mail("actformyanmar@gmail.com", $email_subject, $email_message, $headers);
+    if ($mail_status) { ?>
+      <script language="javascript" type="text/javascript">
+       alert('Thank you for the message. We will contact you shortly.');
+       window.location.href = '/';
+      </script>
+      <?php
+      }else { ?>
+       <script language="javascript" type="text/javascript">
+        alert('Message failed. Please, send an email to gordon@template-help.com');
+        window.location.href = '/';
+       </script>
+      <?php } ?>
     
 
               }
