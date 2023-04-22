@@ -3244,7 +3244,7 @@ iframe {border: none;}
 .width-sm-200 {width: 200px;}
 }
 /* Medium devices (tablets) */
-@media (min-width: 768px) {
+@media (min-width: 768px) and (min-width: 991px) {
 /*[ width ]*/
 .width-md-auto {width: auto!important;}
 .width-md-10 {width: 10px;}
@@ -3692,7 +3692,7 @@ iframe {border: none;}
 .right-sm-100 {right: 100%;}
 }
 /* Medium devices (tablets) */
-@media (min-width: 768px) {
+@media (min-width: 577px) and (max-width: 991px) {
 /* [ Line height ]*/
 .lh-md-10 {line-height: 1.0;}
 .lh-md-11 {line-height: 1.1;}
@@ -5730,7 +5730,7 @@ https://www.segasammy.co.jp/english/
 }
   
 /* Medium devices (tablets) */
-@media (min-width: 576px) and (max-width: 768px) {
+@media (min-width: 577px) and (max-width: 991px) {
 .fs-md-1 {font-size: 1px;}
 .fs-md-2 {font-size: 2px;}
 .fs-md-3 {font-size: 3px;}
