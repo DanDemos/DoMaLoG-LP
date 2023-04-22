@@ -113,20 +113,22 @@ a:hover{
   width: 100vw; 
   height: 100vh; 
   background-color: #F9F9F9;
+  opacity: 
   /* z-index: 3; */
   -webkit-animation: cssAnimation 6s forwards; 
   animation: cssAnimation 6s forwards;
 }
 
+
 @keyframes cssAnimation {
-  0%   {visibility: visible;}
-  90%  {visibility: visible;}
-  100% {visibility: hidden;}
+  0%   {visibility: visible; opacity: 1;}
+  90%  {visibility: visible; opacity: 1;}
+  100% {visibility: hidden; opacity: 0;}
 }
 @-webkit-keyframes cssAnimation {
-  0%   {visibility: visible;}
-  90%  {visibility: visible;}
-  100% {visibility: hidden;}
+  0%   {visibility: visible; opacity: 1;}
+  90%  {visibility: visible; opacity: 1;}
+  100% {visibility: hidden; opacity: 0;}
 }
 
 .menu {
