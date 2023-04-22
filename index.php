@@ -651,7 +651,7 @@
                 // Required code will be goes here
                 $email_to      = $_POST['email'];
             
-                $email_subject = 'DoMaLogの問い合わせ';
+                $email_subject = '「DoMaLoG」お問い合わせ';
                 
                 // $message = 'hello';
                 
@@ -718,7 +718,8 @@
         $bad = array("content-type", "bcc:", "to:", "cc:", "href");
         return str_replace($bad, "", $string);
     }
-
+    $email_message .= "※自動通知メールのため、当メールアドレスへの返信はできません。\n返信をご希望の場合は、「info@pwr.co.jp」までご連絡をお願いいたします。　"  . "\n";
+    $email_message .= "この度は、DoMaLoGへのお問い合わせありがとうございます。　"  . "\n";
     $email_message .= "以下の内容でご確認させていただきます。 "  . "\n";
     $email_message .= "--------------------------------------"  . "\n";
     $email_message .= "お名前: " . clean_string($name) . "\n";
