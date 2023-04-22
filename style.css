@@ -361,6 +361,14 @@ a:hover{
   }
 }
 
+@media (max-width: 575px) {
+  .img-layer-border-1-parent, 
+  .img-layer-border-2-parent, 
+  .img-layer-border-3-parent{
+    display: block;
+  }
+}
+
 .card-1{
   /* margin-right: -100px;  */
   margin-bottom: -90px;
