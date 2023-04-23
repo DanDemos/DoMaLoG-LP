@@ -113,22 +113,28 @@ a:hover{
   width: 100vw; 
   height: 100vh; 
   background-color: #F9F9F9;
-  opacity: 
-  /* z-index: 3; */
+  opacity: 1;
+  visibility: visible;
+  -webkit-animation: cssAnimation 6s forwards; 
+  animation: cssAnimation 6s forwards;
+}
+
+.typing-effect{
+  opacity: 1;
   -webkit-animation: cssAnimation 6s forwards; 
   animation: cssAnimation 6s forwards;
 }
 
 
 @keyframes cssAnimation {
-  0%   {visibility: visible; opacity: 1;}
-  90%  {visibility: visible; opacity: 1;}
-  100% {visibility: hidden; opacity: 0;}
+  0%   {opacity: 1; visibility: visible;}
+  90%  {opacity: 1; visibility: visible;}
+  100% {opacity: 0; visibility: hidden;}
 }
 @-webkit-keyframes cssAnimation {
-  0%   {visibility: visible; opacity: 1;}
-  90%  {visibility: visible; opacity: 1;}
-  100% {visibility: hidden; opacity: 0;}
+  0%   {opacity: 1; visibility: visible; }
+  90%  {opacity: 1; visibility: visible;}
+  100% {opacity: 0; visibility: hidden;}
 }
 
 .menu {
@@ -515,6 +521,7 @@ a:hover{
 
 .ti-cursor{
   font-size: 72px;
+  color: #E36A54!important;
 }
 
 @media (max-width: 576px) {
