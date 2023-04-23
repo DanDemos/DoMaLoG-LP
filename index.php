@@ -6,7 +6,7 @@
     <title>DoMaLog</title>
 
     <!-- Favicons -->
-    <link href="images/fav-icon.jpg" rel="icon" />
+    <link href="images/fav-icon.png" rel="icon" />
     <link href="images/apple-touch-icon.png" rel="apple-touch-icon" />
 
     <!-- CSS only -->
@@ -635,6 +635,7 @@
                   ></textarea>
                 </div>
               </div>
+              <div>warning</div>
               <div
                 class="d-flex justify-content-md-start justify-content-center"
               >
@@ -794,7 +795,29 @@
         </div>
       </div>
     </footer>
+ 
+    <div id="warning-modal" class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Modal body text goes here.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <!-- Glightbox -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js"></script>
@@ -809,7 +832,15 @@
 
     <script src="main.js"></script>
   </body>
-  
+
+  <script type="text/javascript">
+    // open this if you want to show modal box
+
+    // $(window).on('load', function(){ 
+    //   $('#warning-modal').modal('show');
+    // });
+  </script>
+
 </html>
 
 <script>
