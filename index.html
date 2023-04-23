@@ -88,7 +88,7 @@
               <div class=" d-inline-flex justify-content-start text-start">
                 <h1 class="fs-lg-72 fs-32 letter-space-lg-720 letter-space-320 fw-900 lh-15 f-jp text-center" 
                 style="display: inline-table; width: 11em; margin: 0 auto;" >
-                さあ、<span class="typing-effect">リアルEXPを<br />タメよう。</span></h1>
+                さあ、<span class="typing-effect loading-typing">リアルEXPを<br />タメよう。</span></h1>
               </div>
             </div>
           </div>

@@ -119,7 +119,7 @@ a:hover{
   animation: cssAnimation 6s forwards;
 }
 
-.typing-effect{
+.loading-typing{
   opacity: 1;
   -webkit-animation: cssAnimation 6s forwards; 
   animation: cssAnimation 6s forwards;
