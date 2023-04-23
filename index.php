@@ -637,12 +637,18 @@
               </div>
               <div>warning</div>
               <div
-                class="d-flex justify-content-md-start justify-content-center"
+                class="d-flex flex-column justify-content-md-start justify-content-center"
               >
                 <div class="col-lg-12 d-flex justify-content-center m-t-30">
                   <button type="submit" class="secondary-button">
                     送信内容の確認
                   </button>
+                </div>
+
+                <div class="col-lg-12 m-t-40 m-t-sm-60 text-center">
+                  <p class="fs-lg-14 fs-sm-12 fw-600 letter-space-120 lh-28 f-jp">
+                    お問い合わせへの返信は、迷惑メールフォルダに届い<br class="show-on-phone" />てしまう場合がございます。<br />「@domalog.fun」「@pwr.co.jp」からのメールが<br class="show-on-phone" />受信できるように、ドメイン受信拒否設定の解除をお<br class="show-on-phone" />願いいたします。
+                  </p>
                 </div>
               </div>
             </form>
