@@ -677,7 +677,7 @@
                 ></a>
               </div>
               <div>
-                <a href="" class="cl-black"
+                <a href="https://discord.gg/CYHpTHub7N" class="cl-black"
                   ><i class="fab fa-discord fs-24"></i
                 ></a>
               </div>
