@@ -250,15 +250,16 @@
       </div>
     </section>
 
-    <section>
+    <section id="video-session" class="m-t-sm-40">
       <div class="m-0 p-0">
         <div class="row m-0 p-0">
           <div class="position-relative m-0 p-0">
-            <img
+            <!-- <img
               class="w-100 vh100-phone"
               src="images/Grey Rectangle.png"
               alt="Mobile Home Page"
-            />
+            /> -->
+            <video class="w-100" src="video/230421_domalog.mp4"></video>
             <h1 class="text-over-image fw-700 fs-70 f-jp">動&nbsp&nbsp画</h1>
           </div>
         </div>
