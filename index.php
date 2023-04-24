@@ -529,7 +529,7 @@
             <h2 class="fs-24 fs-sm-18 m-t-60 letter-space-240 letter-space-sm-180 fw-700 m-t-sm-30 lh-18 f-jp">
               お問い合わせは<br class="show-on-phone" />Discordチャンネルから。
             </h2>
-            <button class="secondary-button mx-auto m-t-40 f-jp">
+            <button onclick="location.href='https://discord.gg/CYHpTHub7N'" class="secondary-button mx-auto m-t-40 f-jp">
               Discordに参加
             </button>
           </div>
