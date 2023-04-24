@@ -687,7 +687,11 @@
         <div
           class="text-center fs-16 fw-700 m-t-100 p-b-16 letter-space-160"
         >
-          Copyright ©2023 PwR
+        <?php
+        $year = date("Y"); 
+         echo "Copyright ©".$year. " PwR";
+         ?>
+          
         </div>
       </div>
     </footer>
