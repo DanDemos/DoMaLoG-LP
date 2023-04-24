@@ -653,118 +653,7 @@
                 </div>
               </div>
             </form>
-            <?php
-
-              if (isset($_POST["details"]) || isset($_POST["phone"]) || isset($_POST["email"]) || isset($_POST["bu_name"]) || isset($_POST["coorporate"] )|| isset($_POST["name"])) {
-                // Required code will be goes here
-                $email_to      = $_POST['email'];
-            
-                $email_subject = '「DoMaLoG」お問い合わせ';
-                
-                // $message = 'hello';
-                
-                // $headers = 'From: info@domalog.fun' . "\r\n" .
-                
-                //     'Reply-To: info@pwr.co.jp' . "\r\n" .
-                
-                //     'X-Mailer: PHP/' . phpversion();
-                
-               // EDIT THE 2 LINES BELOW AS REQUIRED
-
-    function problem($error)
-    {
-        $error="We are very sorry, but there were error(s) found with the form you submitted.  \\nThese errors appear below.\\n\\n ".$error." \\nPlease go back and fix these errors.\\n\\n";
-       // $error="We are very sorry, but there were error(s) found with the form you submitted.  \n\n These errors appear below.\n\n ".$error." \n\n Please go back and fix these errors.\n\n";
-  
-        echo '<script language="javascript" type="text/JavaScript"> 
-        alert("'.$error.'");
-        window.location.href = "/";
-        </script>';
-      
-        die();
-    }
-
-    // validation expected data exists
-    if (
-        !isset($_POST['details']) ||
-        !isset($_POST['name']) ||
-        !isset($_POST['email'])
-    ) {
-        problem('We are sorry, but there appears to be a problem with the form you submitted.');
-    }
-
-    $name = $_POST['name']; // required
-    $email = $_POST['email']; // required
-    $message = $_POST['details']; // required
-    $phone=$_POST["phone"];
-    $bu_name=$_POST["bu_name"];
-    $coorporate=$_POST["coorporate"];
-
-
-    $error_message = "";
-    $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
-
-    if (!preg_match($email_exp, $email)) {
-        $error_message .='-The Email address you entered does not appear to be valid.\\n';
-    }
-
-    $string_exp = "/^[A-Za-z .'-]+$/";
-
-
-    if (strlen($message) < 2) {
-        $error_message .=' -The Message you entered do not appear to be valid.\\n';
-    }
-
-    if (strlen($error_message) > 0) {
-        problem($error_message);
-    }
-
-    $email_message = "この度は、DoMaLoGへのお問い合わせありがとうございます。　\n\n";
-
-    function clean_string($string)
-    {
-        $bad = array("content-type", "bcc:", "to:", "cc:", "href");
-        return str_replace($bad, "", $string);
-    }
-   
-    $email_message .= "なお、自動通知メールのため、当メールアドレスへの返信はできません。　\n返信をご希望の場合は「info@pwr.co.jp」までご連絡をお願いいたします。"  . "\n\n";
-   
-    $email_message .= "以下の内容でご確認させていただきます。 "  . "\n";
-    $email_message .= "--------------------------------------"  . "\n";
-    $email_message .= "お名前: " . clean_string($name) . "\n";
-    $email_message .= "法人名: " . clean_string($coorporate) . "\n";
-    $email_message .= "部署名: " . clean_string($bu_name) . "\n";
-    $email_message .= "メールアドレス: " . clean_string($email) . "\n";
-    $email_message .= "電話番号: " . clean_string($phone) . "\n";
-    $email_message .= "お問い合わせ内容 : " . clean_string($message) . "\n";
-    $email_message .= "--------------------------------------"  . "\n\n";
-    $email_message .= "弊社より一週間以内に返信がなければ、お手数ですが「info@pwr.co.jp」までお問い合わせください。"  . "\n";
-
-    // create email headers
-    $headers = 'From: ' . "info@domalog.fun" . "\r\n" .
-        'Reply-To: ' . "info@pwr.co.jp" . "\r\n" .
-        'X-Mailer: PHP/' . phpversion();
-    mail($email_to, $email_subject, $email_message, $headers);
-    $mail_status = mail("info@domalog.fun", $email_subject, $email_message, $headers);
-    // mail("actformyanmar@gmail.com", $email_subject, $email_message, $headers);
-    
-    if ($mail_status){
-      echo '<script language="javascript" type="text/JavaScript"> 
-      alert("Thank you for the message. We will contact you shortly.");
-      window.location.href = "/";
-      </script>';
-    }else{
-      echo '<script language="javascript" type="text/JavaScript"> 
-      alert("Message failed. Please, send an email to info@pwr.co.jp");
-      window.location.href = "/";
-      </script>';
-    } 
-
-              }
-
-         
-            
-            ?>
+           
           </div>
         </div>
       </div>
@@ -803,23 +692,7 @@
       </div>
     </footer>
  
-    <div id="warning-modal" class="modal" tabindex="-1">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Modal title</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <p>Modal body text goes here.</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </div>
-      </div>
-    </div>
+   
 
     <!-- Jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
@@ -847,7 +720,137 @@
     //   $('#warning-modal').modal('show');
     // });
   </script>
+ <?php
 
+if (isset($_POST["details"]) || isset($_POST["phone"]) || isset($_POST["email"]) || isset($_POST["bu_name"]) || isset($_POST["coorporate"] )|| isset($_POST["name"])) {
+  // Required code will be goes here
+  $email_to      = $_POST['email'];
+
+  $email_subject = '「DoMaLoG」お問い合わせ';
+  
+  // $message = 'hello';
+  
+  // $headers = 'From: info@domalog.fun' . "\r\n" .
+  
+  //     'Reply-To: info@pwr.co.jp' . "\r\n" .
+  
+  //     'X-Mailer: PHP/' . phpversion();
+  
+ // EDIT THE 2 LINES BELOW AS REQUIRED
+
+function problem($error)
+{
+$error="We are very sorry, but there were error(s) found with the form you submitted.  \\nThese errors appear below.\\n\\n ".$error." \\nPlease go back and fix these errors.\\n\\n";
+// $error="We are very sorry, but there were error(s) found with the form you submitted.  \n\n These errors appear below.\n\n ".$error." \n\n Please go back and fix these errors.\n\n";
+
+echo '<script language="javascript" type="text/JavaScript"> 
+alert("'.$error.'");
+window.location.href = "/";
+</script>';
+
+die();
+}
+
+// validation expected data exists
+if (
+!isset($_POST['details']) ||
+!isset($_POST['name']) ||
+!isset($_POST['email'])
+) {
+problem('We are sorry, but there appears to be a problem with the form you submitted.');
+}
+
+$name = $_POST['name']; // required
+$email = $_POST['email']; // required
+$message = $_POST['details']; // required
+$phone=$_POST["phone"];
+$bu_name=$_POST["bu_name"];
+$coorporate=$_POST["coorporate"];
+
+
+$error_message = "";
+$email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
+
+if (!preg_match($email_exp, $email)) {
+$error_message .='-The Email address you entered does not appear to be valid.\\n';
+}
+
+$string_exp = "/^[A-Za-z .'-]+$/";
+
+
+if (strlen($message) < 2) {
+$error_message .=' -The Message you entered do not appear to be valid.\\n';
+}
+
+if (strlen($error_message) > 0) {
+problem($error_message);
+}
+
+$email_message = "この度は、DoMaLoGへのお問い合わせありがとうございます。　\n\n";
+
+function clean_string($string)
+{
+$bad = array("content-type", "bcc:", "to:", "cc:", "href");
+return str_replace($bad, "", $string);
+}
+function model($title,$body){
+$text='<div id="warning-modal" class="modal" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">'.$title.'</h5>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+</button></div>
+<div class="modal-body"><p>'.$body.'</p></div>
+<div class="modal-footer">
+<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+</div></div></div></div>';
+return $text;
+}
+
+$email_message .= "なお、自動通知メールのため、当メールアドレスへの返信はできません。　\n返信をご希望の場合は「info@pwr.co.jp」までご連絡をお願いいたします。"  . "\n\n";
+
+$email_message .= "以下の内容でご確認させていただきます。 "  . "\n";
+$email_message .= "--------------------------------------"  . "\n";
+$email_message .= "お名前: " . clean_string($name) . "\n";
+$email_message .= "法人名: " . clean_string($coorporate) . "\n";
+$email_message .= "部署名: " . clean_string($bu_name) . "\n";
+$email_message .= "メールアドレス: " . clean_string($email) . "\n";
+$email_message .= "電話番号: " . clean_string($phone) . "\n";
+$email_message .= "お問い合わせ内容 : " . clean_string($message) . "\n";
+$email_message .= "--------------------------------------"  . "\n\n";
+$email_message .= "弊社より一週間以内に返信がなければ、お手数ですが「info@pwr.co.jp」までお問い合わせください。"  . "\n";
+
+// create email headers
+$headers = 'From: ' . "info@domalog.fun" . "\r\n" .
+'Reply-To: ' . "info@pwr.co.jp" . "\r\n" .
+'X-Mailer: PHP/' . phpversion();
+mail($email_to, $email_subject, $email_message, $headers);
+$mail_status = mail("info@domalog.fun", $email_subject, $email_message, $headers);
+// mail("actformyanmar@gmail.com", $email_subject, $email_message, $headers);
+
+if ($mail_status){
+$data= model('Thank you for the message.','We will contact you shortly.');
+echo  $data.'<script language="javascript" type="text/JavaScript"> 
+$(window).on("load", function(){ 
+$("#warning-modal").modal("show");
+});
+</script>';
+}else{
+$data= model('Message failed.','Please, send an email to info@pwr.co.jp');
+echo  $data.'<script language="javascript" type="text/JavaScript"> 
+$(window).on("load", function(){ 
+$("#warning-modal").modal("show");
+});
+</script>';
+
+} 
+
+}
+
+
+
+?>
 </html>
 
 <script>
