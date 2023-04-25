@@ -259,7 +259,7 @@
               src="images/Grey Rectangle.png"
               alt="Mobile Home Page"
             /> -->
-            <video class="w-100" src="video/230421_domalog.mp4" autoplay></video>
+            <video class="w-100" src="video/230421_domalog.mp4" autoplay loop playsinline></video>
             <!-- <h1 class="text-over-image fw-700 fs-70 f-jp">動&nbsp&nbsp画</h1> -->
           </div>
         </div>
@@ -636,7 +636,7 @@
                   ></textarea>
                 </div>
               </div>
-              <div>warning</div>
+              <!-- <div>warning</div> -->
               <div
                 class="d-flex flex-column justify-content-md-start justify-content-center"
               >
