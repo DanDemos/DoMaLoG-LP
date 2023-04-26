@@ -7,6 +7,10 @@ $(document).ready(function () {
     $(this).next().show();
     $("#blackscreen").show();
   });
+
+  $(".carousel").carousel({
+    interval: 1000,
+  })
 })
 
 const mediaQueries = [
