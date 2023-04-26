@@ -11,6 +11,22 @@ $(document).ready(function () {
   $(".carousel").carousel({
     interval: 1000,
   })
+
+  $("#volume-button").click(function () {
+    if ($(this).children().hasClass("fa-volume-up")) {
+      $(this).children().removeClass("fa-volume-up")
+      $(this).children().addClass("fa-volume-mute")
+      $("#promo-video").prop('muted', true);
+    }
+    else if ($(this).children().hasClass("fa-volume-mute")){
+      $(this).children().removeClass("fa-volume-mute")
+      $(this).children().addClass("fa-volume-up")
+      $("#promo-video").prop('muted', false);
+    }
+    else{
+      alert("Unexpected error")
+    }
+  });
 })
 
 const mediaQueries = [
@@ -48,7 +64,7 @@ elements.forEach(element => {
   element.innerHTML = '';
 
   var abc = original.split('<br>');
-  console.log(abc);
+  // console.log(abc);
 
   new TypeIt(element, {
     strings: abc,
