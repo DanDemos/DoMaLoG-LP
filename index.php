@@ -701,7 +701,7 @@
 
             <div class="d-flex justify-content-between w-100 m-t-40">
               <div>
-                <a href="" class="cl-black"
+                <a href="https://twitter.com/_pwr_official_" class="cl-black"
                   ><i class="fab fa-twitter fs-24"></i
                 ></a>
               </div>
