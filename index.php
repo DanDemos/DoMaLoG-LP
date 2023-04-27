@@ -144,12 +144,12 @@
             >
             <div class="d-flex justify-content-between w-100 m-t-35 m-b-4">
               <div>
-                <button href="" class="cl-white">
+                <button href="https://twitter.com/_pwr_official_" class="cl-white">
                   <i class="fab fa-twitter fs-24 hover-large"></i>
                 </button>
               </div>
               <div>
-                <button href="" class="cl-white">
+                <button href="https://discord.gg/CYHpTHub7N" class="cl-white">
                   <i class="fab fa-discord fs-24 hover-large"></i>
                 </button>
               </div>
