@@ -267,17 +267,26 @@
               type="button"><i id="volume-icon" class="fas fa-volume-mute cl-primary rounded-circle bg-white p-2"></i></button>
             </div>
 
+            
             <div id="carouselExampleSlidesOnly" class="carousel slide show-on-phone show-on-tablet" data-bs-ride="carousel">
               <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="..." class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="..." class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="..." class="d-block w-100" alt="...">
-                </div>
+                <?php
+                  $directory = "promo-video-img/";
+                  $images = glob($directory . "/*.jpg");
+                  foreach($images as $key => $image)
+                  {
+                    if ($key == 1) {
+                      echo '<div class="carousel-item active">
+                              <img src="'+$image+'" class="d-block w-100" alt="...">
+                            </div>';
+                    }
+                    else{
+                      echo '<div class="carousel-item">
+                              <img src="'+$image+'" class="d-block w-100" alt="...">
+                            </div>';
+                    }
+                  }
+                ?>
               </div>
             </div>
 
