@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>DoMaLog</title>
+    <title>DoMaLoG</title>
 
     <!-- Favicons -->
     <link href="images/fav-icon.png" rel="icon" />
@@ -350,7 +350,7 @@
           </div>
           <div class="col-lg-5 col-md-8 col-12 p-0 d-flex flex-column">
             <div class="text-center p-t-0 p-r-lg-70 p-r-0">
-              <h1 class="fs-24 fs-sm-16 letter-space-160 fw-700 f-jp">早くいきたければ一人で進め。</h1>
+              <h1 class="fs-24 fs-sm-16 letter-space-160 fw-700 f-jp">早くいきたければ、一人で進め。</h1>
               <h2 class="fs-24 fs-sm-16 letter-space-160 fw-700 p-t-15 f-jp">
                 遠くまで行きたければ、みんなで進め。
               </h2>
