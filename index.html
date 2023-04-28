@@ -144,12 +144,12 @@
             >
             <div class="d-flex justify-content-between w-100 m-t-35 m-b-4">
               <div>
-                <button href="" class="cl-white">
+                <button href="https://twitter.com/_pwr_official_" class="cl-white">
                   <i class="fab fa-twitter fs-24 hover-large"></i>
                 </button>
               </div>
               <div>
-                <button href="" class="cl-white">
+                <button href="https://discord.gg/CYHpTHub7N" class="cl-white">
                   <i class="fab fa-discord fs-24 hover-large"></i>
                 </button>
               </div>
@@ -279,12 +279,12 @@
                   {
                     if ($key == 1) {
                       echo '<div class="carousel-item active">
-                              <img src="'+$image+'" class="d-block w-100" alt="...">
+                              <img src="'.$image.'" class="d-block w-100" alt="...">
                             </div>';
                     }
                     else{
                       echo '<div class="carousel-item">
-                              <img src="'+$image+'" class="d-block w-100" alt="...">
+                              <img src="'.$image.'" class="d-block w-100" alt="...">
                             </div>';
                     }
                   }
@@ -773,7 +773,16 @@
       || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
     }
 
-    console.log(iOS())
+    let android = document.getElementById("video")
+    let ios = document.getElementById("carouselExampleSlidesOnly")
+    if(iOS()){
+      ios.style.display = 'block';
+      android.style.display = 'none';
+    }
+    else{
+      android.style.display = 'block';
+      ios.style.display = 'none';
+    }
   </script>
  <?php
 
