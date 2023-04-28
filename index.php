@@ -279,12 +279,12 @@
                   {
                     if ($key == 1) {
                       echo '<div class="carousel-item active">
-                              <img src="'.$image.'" class="d-block w-100" alt="...">
+                              <img src="'+$image+'" class="d-block w-100" alt="...">
                             </div>';
                     }
                     else{
                       echo '<div class="carousel-item">
-                              <img src="'.$image.'" class="d-block w-100" alt="...">
+                              <img src="'+$image+'" class="d-block w-100" alt="...">
                             </div>';
                     }
                   }
@@ -716,6 +716,9 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="pptermLink text-center">
+          <a href="/terms/index.html">利用規約</a>　／　<a href="/privacypolicy/index.html">プライバシーポリシー</a>
         </div>
         <div
           class="text-center fs-16 fw-700 m-t-100 p-b-16 letter-space-160"

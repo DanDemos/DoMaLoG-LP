@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>DoMaLog</title>
+    <title>DoMaLoG</title>
 
     <!-- Favicons -->
     <link href="images/fav-icon.png" rel="icon" />
@@ -209,18 +209,20 @@
                         class="container position-absolute bottom-0 start-0 end-0 mx-auto"
                       >
                         <div class="row app-icons m-t-0 m-t-sm-100">
-                          <a class="col-12 col-md-6 px-0" href="https://apps.apple.com/app/id1551353775">
+                          <!-- <a class="col-12 col-md-6 px-0" href="https://apps.apple.com/app/id1551353775">
                             <img 
                               class="apple"
                               src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1276560000&h=7e7b68fad19738b5649a1bfb78ff46e9" 
                               alt="Download on the App Store">
-                          </a>
+                          </a> -->
+                          <centre>
                           <a class="col-12 col-md-6 px-0" href='https://play.google.com/store/apps/details?id=com.stagescycling.stages'>
                             <img 
                               class="android" 
                               alt='Get it on Google Play' 
-                              src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' />
+                              src='images/button-cv.png' />
                           </a>
+                        </centre>
                         </div>
                       </div>
                     </div>
@@ -261,24 +263,32 @@
             /> -->
             <!-- <h1 class="text-over-image fw-700 fs-70 f-jp">動&nbsp&nbsp画</h1> -->
 
-
             <div class="w-100 position-relative show-on-desktop">
               <video id="promo-video" class="w-100" playsinline="" autoplay="" muted="" loop="" src="video/230421_domalog.mp4" type="video/mp4"></video>
               <button id="volume-button" class="position-absolute top-0 left-0 m-3" 
               type="button"><i id="volume-icon" class="fas fa-volume-mute cl-primary rounded-circle bg-white p-2"></i></button>
             </div>
 
+            
             <div id="carouselExampleSlidesOnly" class="carousel slide show-on-phone show-on-tablet" data-bs-ride="carousel">
               <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="..." class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="..." class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="..." class="d-block w-100" alt="...">
-                </div>
+                <?php
+                  $directory = "promo-video-img/";
+                  $images = glob($directory . "/*.jpg");
+                  foreach($images as $key => $image)
+                  {
+                    if ($key == 1) {
+                      echo '<div class="carousel-item active">
+                              <img src="'+$image+'" class="d-block w-100" alt="...">
+                            </div>';
+                    }
+                    else{
+                      echo '<div class="carousel-item">
+                              <img src="'+$image+'" class="d-block w-100" alt="...">
+                            </div>';
+                    }
+                  }
+                ?>
               </div>
             </div>
 
@@ -342,7 +352,7 @@
           </div>
           <div class="col-lg-5 col-md-8 col-12 p-0 d-flex flex-column">
             <div class="text-center p-t-0 p-r-lg-70 p-r-0">
-              <h1 class="fs-24 fs-sm-16 letter-space-160 fw-700 f-jp">早くいきたければ一人で進め。</h1>
+              <h1 class="fs-24 fs-sm-16 letter-space-160 fw-700 f-jp">早くいきたければ、一人で進め。</h1>
               <h2 class="fs-24 fs-sm-16 letter-space-160 fw-700 p-t-15 f-jp">
                 遠くまで行きたければ、みんなで進め。
               </h2>
@@ -499,18 +509,20 @@
                         class="container position-absolute bottom-0 start-0 end-0 mx-auto m-b-50"
                       >
                         <div class="row app-icons m-t-0 m-t-sm-100">
-                          <a class="col-12 col-md-6 px-0" href="https://apps.apple.com/app/id1551353775">
+                          <!-- <a class="col-12 col-md-6 px-0" href="https://apps.apple.com/app/id1551353775">
                             <img 
                               class="apple"
                               src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1276560000&h=7e7b68fad19738b5649a1bfb78ff46e9" 
                               alt="Download on the App Store">
-                          </a>
+                          </a> -->
+                          <centre>
                           <a class="col-12 col-md-6 px-0" href='https://play.google.com/store/apps/details?id=com.stagescycling.stages'>
                             <img 
                               class="android" 
                               alt='Get it on Google Play' 
-                              src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' />
+                              src='images/button-cv.png' />
                           </a>
+                        </centre>
                         </div>
                       </div>
                     </div>
@@ -519,7 +531,7 @@
                     <img src="images/img-5.png" alt="Logo" />
                     <img
                       class="show-on-desktop"
-                      src="images/img-5.png"
+                      src="images/img-6.png"
                       alt="Logo"
                     />
                   </div>
@@ -550,7 +562,7 @@
             <h2 class="fs-24 fs-sm-18 m-t-60 letter-space-240 letter-space-sm-180 fw-700 m-t-sm-30 lh-18 f-jp">
               お問い合わせは<br class="show-on-phone" />Discordチャンネルから。
             </h2>
-            <button class="secondary-button mx-auto m-t-40 f-jp">
+            <button onclick="location.href='https://discord.gg/CYHpTHub7N'" class="secondary-button mx-auto m-t-40 f-jp">
               Discordに参加
             </button>
           </div>
@@ -657,6 +669,7 @@
                   ></textarea>
                 </div>
               </div>
+              <!-- <div>warning</div> -->
               <div
                 class="d-flex flex-column justify-content-md-start justify-content-center"
               >
@@ -665,7 +678,7 @@
                     送信内容の確認
                   </button>
                 </div>
-                
+
                 <div class="col-lg-12 m-t-40 m-t-sm-60 text-center">
                   <p class="fs-lg-14 fs-sm-12 fw-600 letter-space-120 lh-28 f-jp">
                     お問い合わせへの返信は、迷惑メールフォルダに届い<br class="show-on-phone" />てしまう場合がございます。<br />「@domalog.fun」「@pwr.co.jp」からのメールが<br class="show-on-phone" />受信できるように、ドメイン受信拒否設定の解除をお<br class="show-on-phone" />願いいたします。
@@ -673,7 +686,7 @@
                 </div>
               </div>
             </form>
-            
+           
           </div>
         </div>
       </div>
@@ -692,48 +705,40 @@
 
             <div class="d-flex justify-content-between w-100 m-t-40">
               <div>
-                <a href="" class="cl-black"
+                <a href="https://twitter.com/_pwr_official_" class="cl-black"
                   ><i class="fab fa-twitter fs-24"></i
                 ></a>
               </div>
               <div>
-                <a href="" class="cl-black"
+                <a href="https://discord.gg/CYHpTHub7N" class="cl-black"
                   ><i class="fab fa-discord fs-24"></i
                 ></a>
               </div>
             </div>
           </div>
         </div>
+        <div class="pptermLink text-center">
+          <a href="/terms/index.html">利用規約</a>　／　<a href="/privacypolicy/index.html">プライバシーポリシー</a>
+        </div>
         <div
           class="text-center fs-16 fw-700 m-t-100 p-b-16 letter-space-160"
         >
-          Copyright ©2023 PwR
+        <?php
+        $year = date("Y"); 
+         echo "Copyright ©".$year. " PwR";
+         ?>
+          
         </div>
       </div>
     </footer>
-
-    <div id="warning-modal" class="modal" tabindex="-1">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Modal title</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <p>Modal body text goes here.</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </div>
-      </div>
-    </div>
+ 
+   
 
     <!-- Jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <!-- Bootstrap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <!-- Glightbox -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js"></script>
     <!-- A touchable Pure Javascript lightbox with mobile and video support. -->
@@ -747,7 +752,7 @@
 
     <script src="main.js"></script>
   </body>
-      
+
   <script type="text/javascript">
     // open this if you want to show modal box
 
@@ -755,7 +760,137 @@
     //   $('#warning-modal').modal('show');
     // });
   </script>
-    
+ <?php
+
+if (isset($_POST["details"]) || isset($_POST["phone"]) || isset($_POST["email"]) || isset($_POST["bu_name"]) || isset($_POST["coorporate"] )|| isset($_POST["name"])) {
+  // Required code will be goes here
+  $email_to      = $_POST['email'];
+
+  $email_subject = '「DoMaLoG」お問い合わせ';
+  
+  // $message = 'hello';
+  
+  // $headers = 'From: info@domalog.fun' . "\r\n" .
+  
+  //     'Reply-To: info@pwr.co.jp' . "\r\n" .
+  
+  //     'X-Mailer: PHP/' . phpversion();
+  
+ // EDIT THE 2 LINES BELOW AS REQUIRED
+
+function problem($error)
+{
+$error="We are very sorry, but there were error(s) found with the form you submitted.  \\nThese errors appear below.\\n\\n ".$error." \\nPlease go back and fix these errors.\\n\\n";
+// $error="We are very sorry, but there were error(s) found with the form you submitted.  \n\n These errors appear below.\n\n ".$error." \n\n Please go back and fix these errors.\n\n";
+
+echo '<script language="javascript" type="text/JavaScript"> 
+alert("'.$error.'");
+window.location.href = "/";
+</script>';
+
+die();
+}
+
+// validation expected data exists
+if (
+!isset($_POST['details']) ||
+!isset($_POST['name']) ||
+!isset($_POST['email'])
+) {
+problem('We are sorry, but there appears to be a problem with the form you submitted.');
+}
+
+$name = $_POST['name']; // required
+$email = $_POST['email']; // required
+$message = $_POST['details']; // required
+$phone=$_POST["phone"];
+$bu_name=$_POST["bu_name"];
+$coorporate=$_POST["coorporate"];
+
+
+$error_message = "";
+$email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
+
+if (!preg_match($email_exp, $email)) {
+$error_message .='-The Email address you entered does not appear to be valid.\\n';
+}
+
+$string_exp = "/^[A-Za-z .'-]+$/";
+
+
+if (strlen($message) < 2) {
+$error_message .=' -The Message you entered do not appear to be valid.\\n';
+}
+
+if (strlen($error_message) > 0) {
+problem($error_message);
+}
+
+$email_message = "この度は、DoMaLoGへのお問い合わせありがとうございます。　\n\n";
+
+function clean_string($string)
+{
+$bad = array("content-type", "bcc:", "to:", "cc:", "href");
+return str_replace($bad, "", $string);
+}
+function model($title,$body){
+$text='<div id="warning-modal" class="modal" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">'.$title.'</h5>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+</button></div>
+<div class="modal-body"><p>'.$body.'</p></div>
+<div class="modal-footer">
+<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+</div></div></div></div>';
+return $text;
+}
+
+$email_message .= "なお、自動通知メールのため、当メールアドレスへの返信はできません。　\n返信をご希望の場合は「info@pwr.co.jp」までご連絡をお願いいたします。"  . "\n\n";
+
+$email_message .= "以下の内容でご確認させていただきます。 "  . "\n";
+$email_message .= "--------------------------------------"  . "\n";
+$email_message .= "お名前: " . clean_string($name) . "\n";
+$email_message .= "法人名: " . clean_string($coorporate) . "\n";
+$email_message .= "部署名: " . clean_string($bu_name) . "\n";
+$email_message .= "メールアドレス: " . clean_string($email) . "\n";
+$email_message .= "電話番号: " . clean_string($phone) . "\n";
+$email_message .= "お問い合わせ内容 : " . clean_string($message) . "\n";
+$email_message .= "--------------------------------------"  . "\n\n";
+$email_message .= "弊社より一週間以内に返信がなければ、お手数ですが「info@pwr.co.jp」までお問い合わせください。"  . "\n";
+
+// create email headers
+$headers = 'From: ' . "info@domalog.fun" . "\r\n" .
+'Reply-To: ' . "info@pwr.co.jp" . "\r\n" .
+'X-Mailer: PHP/' . phpversion();
+mail($email_to, $email_subject, $email_message, $headers);
+$mail_status = mail("info@domalog.fun", $email_subject, $email_message, $headers);
+// mail("actformyanmar@gmail.com", $email_subject, $email_message, $headers);
+
+if ($mail_status){
+$data= model('Thank you for the message.','We will contact you shortly.');
+echo  $data.'<script language="javascript" type="text/JavaScript"> 
+$(window).on("load", function(){ 
+$("#warning-modal").modal("show");
+});
+</script>';
+}else{
+$data= model('Message failed.','Please, send an email to info@pwr.co.jp');
+echo  $data.'<script language="javascript" type="text/JavaScript"> 
+$(window).on("load", function(){ 
+$("#warning-modal").modal("show");
+});
+</script>';
+
+} 
+
+}
+
+
+
+?>
 </html>
 
 <script>

@@ -530,3 +530,64 @@ a:hover{
     line-height: 1.5!important;
   }
 }
+/* privacypolicy terms */
+.pptermLink{
+  font-size: 12px;
+  padding-top: 80px;
+}
+
+.pptermLink a{
+  text-decoration: underline!important;
+}
+.ppterm {
+  width: 87.5%;
+  max-width: 800px;
+  margin: 120px auto 200px;
+}
+
+.ppterm__item{
+  margin-bottom: 40px;
+}
+
+.ppterm h2{
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.ppterm h3{
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+
+.ppterm h4{
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+
+.ppterm .list{
+  padding-left: 0;
+}
+.ppterm .list li{
+  margin-bottom: 24px;
+}
+.ppterm .list-mid li{
+  list-style-type: decimal;
+  margin-bottom: 24px;
+}
+
+.ppterm .list-small li{
+  list-style-type: decimal;
+  margin-bottom: 0;
+}
+
+.ppterm p{
+  margin-bottom: 24px;
+}
+
+.ppterm__closing{
+  display: flex;
+  justify-content: flex-end;
+}
