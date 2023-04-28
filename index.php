@@ -279,12 +279,12 @@
                   {
                     if ($key == 1) {
                       echo '<div class="carousel-item active">
-                              <img src="'+$image+'" class="d-block w-100" alt="...">
+                              <img src="'.$image.'" class="d-block w-100" alt="...">
                             </div>';
                     }
                     else{
                       echo '<div class="carousel-item">
-                              <img src="'+$image+'" class="d-block w-100" alt="...">
+                              <img src="'.$image.'" class="d-block w-100" alt="...">
                             </div>';
                     }
                   }
