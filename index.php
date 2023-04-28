@@ -263,14 +263,14 @@
             /> -->
             <!-- <h1 class="text-over-image fw-700 fs-70 f-jp">動&nbsp&nbsp画</h1> -->
 
-            <div class="w-100 position-relative show-on-desktop">
+            <div id="video" class="w-100 position-relative">
               <video id="promo-video" class="w-100" playsinline="" autoplay="" muted="" loop="" src="video/230421_domalog.mp4" type="video/mp4"></video>
               <button id="volume-button" class="position-absolute top-0 left-0 m-3" 
               type="button"><i id="volume-icon" class="fas fa-volume-mute cl-primary rounded-circle bg-white p-2"></i></button>
             </div>
 
             
-            <div id="carouselExampleSlidesOnly" class="carousel slide show-on-phone show-on-tablet" data-bs-ride="carousel">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
                 <?php
                   $directory = "promo-video-img/";
@@ -759,6 +759,30 @@
     // $(window).on('load', function(){ 
     //   $('#warning-modal').modal('show');
     // });
+
+    function iOS() {
+      return [
+        'iPad Simulator',
+        'iPhone Simulator',
+        'iPod Simulator',
+        'iPad',
+        'iPhone',
+        'iPod'
+      ].includes(navigator.platform)
+      // iPad on iOS 13 detection
+      || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
+    }
+
+    let android = document.getElementById("video")
+    let ios = document.getElementById("carouselExampleSlidesOnly")
+    if(iOS()){
+      ios.style.display = 'block';
+      android.style.display = 'none';
+    }
+    else{
+      android.style.display = 'block';
+      ios.style.display = 'none';
+    }
   </script>
  <?php
 
