@@ -271,8 +271,8 @@
 
             
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <?php
+             <!-- <div class="carousel-inner">
+              /*  <?php
                   $directory = "promo-video-img/";
                   $images = glob($directory . "/*.jpg");
                   foreach($images as $key => $image)
@@ -288,9 +288,12 @@
                             </div>';
                     }
                   }
-                ?>
-              </div>
-            </div>
+                ?> */
+              </div> -->
+		     <div id="video" class="w-100 position-relative">
+	    <iframe class="w-100" src="https://www.youtube.com/embed/cfl0eCRPr-w" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		    </div>
+	</div>
 
           </div>
         </div>
