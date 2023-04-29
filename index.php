@@ -269,16 +269,18 @@
               type="button"><i id="volume-icon" class="fas fa-volume-mute cl-primary rounded-circle bg-white p-2"></i></button>
             </div>
 
-            <iframe width="100%" height="100%" 
-            src="https://www.youtube.com/embed/cfl0eCRPr-w" 
-            title="YouTube video player" 
-            frameborder="0" allow="accelerometer; 
-            autoplay; clipboard-write; 
-            encrypted-media; gyroscope; 
-            picture-in-picture; web-share" 
-            allowfullscreen
-            id="youtube-video"
-            ></iframe>
+            <div class="video-container">
+              <iframe width="100%" height="100%" 
+              src="https://www.youtube.com/embed/cfl0eCRPr-w" 
+              title="YouTube video player" 
+              frameborder="0" allow="accelerometer; 
+              autoplay; clipboard-write; 
+              encrypted-media; gyroscope; 
+              picture-in-picture; web-share" 
+              allowfullscreen
+              id="youtube-video"
+              ></iframe>
+            </div>
 
             <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
