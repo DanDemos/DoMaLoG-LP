@@ -140,7 +140,7 @@
             <a
               href="#session4"
               class="mt-3 cl-white cl-hover-white hover-italic"
-              >Content</a
+              >Contact</a
             >
             <div class="d-flex justify-content-between w-100 m-t-35 m-b-4">
               <div>
@@ -786,7 +786,7 @@
     }
 
     let android = document.getElementById("video")
-    let ios = document.getElementById("youtube-video")
+    let ios = document.getElementById("video")
     // let ios = document.getElementById("carouselExampleSlidesOnly")
     
     if(iOS()){
