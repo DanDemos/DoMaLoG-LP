@@ -530,6 +530,26 @@ a:hover{
     line-height: 1.5!important;
   }
 }
+
+#youtube-video{
+  /* width: 100%;
+  height: 100vh;
+  min-height: 100%;
+  max-height: 100%; */
+  position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
 /* privacypolicy terms */
 .pptermLink{
   font-size: 12px;
@@ -573,14 +593,52 @@ a:hover{
 .ppterm .list li{
   margin-bottom: 24px;
 }
+
 .ppterm .list-mid li{
   list-style-type: decimal;
   margin-bottom: 24px;
 }
 
+.ppterm .list-small{
+  counter-reset: cnt;
+}
+
 .ppterm .list-small li{
-  list-style-type: decimal;
+  list-style-type: none;
   margin-bottom: 0;
+}
+
+.ppterm .list-small li::before {
+  counter-increment: cnt;
+  content: "(" counter(cnt) ")";
+}
+
+.ppterm .list-min{
+  counter-reset: cnt;
+}
+
+.ppterm .list-min li{
+  list-style-type: none;
+  padding-left: 24px;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.ppterm .list-min li::before {
+  content: "" counter(cnt) "";
+  counter-increment: cnt;
+  border: 1.5px solid;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 18px;
+  width: 18px;
+  font-size: 85%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .ppterm p{
@@ -590,24 +648,4 @@ a:hover{
 .ppterm__closing{
   display: flex;
   justify-content: flex-end;
-}
-
-#youtube-video{
-  /* width: 100%;
-  height: 100vh;
-  min-height: 100%;
-  max-height: 100%; */
-  position:absolute;
-	top:0;
-	left:0;
-	width:100%;
-	height:100%;
-}
-
-.video-container {
-	position:relative;
-	padding-bottom:56.25%;
-	padding-top:30px;
-	height:0;
-	overflow:hidden;
 }
